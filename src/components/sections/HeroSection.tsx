@@ -21,7 +21,7 @@ export function HeroSection() {
             <span className="block text-3xl sm:text-4xl italic font-light">
               Create your next
             </span>
-            <span className="block text-5xl sm:text-6xl font-semibold text-green-400 not-italic">
+            <span className="block text-5xl sm:text-6xl font-(--font-source-serif)">
               AI Agent
             </span>
           </h1>
@@ -62,16 +62,26 @@ export function HeroSection() {
           </div>
         </div>
 
-        <p className="mt-16 text-gray-500 text-sm">
+        <p className="mt-16 text-2xl">
           Your next hire isn’t human. These companies already know it...
         </p>
 
         <div className="mt-8 flex justify-center gap-10 opacity-70">
-          <img src="logo_nvidia.svg" alt="NVIDIA" className="h-20" />
-          <img src="logo_microsoft.svg" alt="Microsoft" className="h-20" />
-          <img src="logo_vias3d.svg" alt="VIAS3D" className="h-20" />
-          <img src="logo_taraborelli.svg" alt="Taraborelli" className="h-20" />
-          <img src="logo_portsaid.svg" alt="Portsaid" className="h-20" />
+          <img src="logo_nvidia.svg" alt="NVIDIA" className="h-17 w-108" />
+          <img
+            src="logo_microsoft.svg"
+            alt="Microsoft"
+            className="h-17 w-108"
+          />
+          <img src="logo_vias3d.svg" alt="VIAS3D" className="h-17 w-108" />
+          <img
+            src="logo_taraborelli.svg"
+            alt="Taraborelli"
+            className="h-17 w-108"
+          />
+          <img src="logo_portsaid.svg" alt="Portsaid" className="h-17 w-108" />
+          <img src="logo_gfitness.svg" alt="Gfitness" className="h-17 w-108" />
+          <img src="logo_granger.svg" alt="Granger" className="h-17 w-108" />
         </div>
       </div>
     </section>

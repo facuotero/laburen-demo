@@ -11,7 +11,7 @@ export function AgentInput() {
         className="w-full resize-none rounded-lg bg-neutral-800/80 border border-neutral-700 text-gray-200 px-6 py-3 pr-12 placeholder-gray-500 focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:outline-none"
       />
       <button
-        className="absolute right-2 top-1/2 -translate-y-1/2 bg-green-600 hover:bg-green-700 transition-colors rounded-full p-2"
+        className="absolute right-2 top-1/2 -translate-y-1/2 bg-primary-500 hover:bg-primary-600 transition-colors rounded-full p-2"
         aria-label="Send message"
       >
         <ArrowUp className="h-5 w-5 text-white" />

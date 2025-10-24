@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/shared/Navbar"
 import { HeroSection } from "@/components/sections/HeroSection"
+import AgentsSection from "@/components/sections/AgentSection"
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
       {/* <FeaturesSection /> */}
       {/* <FAQSection /> */}
       {/* <FooterSection /> */}
+      <AgentsSection />
     </main>
   )
 }

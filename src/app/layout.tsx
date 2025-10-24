@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
+import localFont from "next/font/local"
 
 // 🔤 Fuente principal (Inter)
 const inter = Inter({
@@ -8,6 +9,13 @@ const inter = Inter({
   variable: "--font-inter",
   display: "swap",
 })
+
+const sourceSerif = localFont({
+  src: "./fonts/source-serif-pro.semibold.otf",
+  variable: "--font-source-serif",
+  weight: "600",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "LaburenAI",
@@ -25,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${inter.variable} font-sans antialiased bg-(--color-background-dark) text-white`}
+        className={`${inter.variable} ${sourceSerif.variable} font-sans antialiased bg-(--color-background-dark) text-white`}
       >
         {children}
       </body>
