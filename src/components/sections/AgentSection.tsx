@@ -9,10 +9,15 @@ export default function AgentsSection() {
         <h2 className="text-center text-4xl font-semibold tracking-tight text-neutral-900 dark:text-white">
           Create, Connect, and Power Your Business with AI employees
         </h2>
-        <AgentCard />
-        <AgentCard />
-        <AgentCard />
-        <AgentCard />
+        
+        {/* Primera AgentCard - Empleados AI */}
+        <AgentCard type="employees" />
+        
+        {/* Segunda AgentCard - Plataformas */}
+        <AgentCard type="platforms" />
+        
+        {/* Tercera AgentCard - Integraciones */}
+        <AgentCard type="integrations" />
       </div>
     </section>
   );
