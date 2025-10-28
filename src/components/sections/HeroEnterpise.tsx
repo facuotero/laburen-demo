@@ -54,22 +54,22 @@ export default function HeroEnterprise() {
               <Image
                 alt="OpenAI"
                 src="/openAI.svg"
-                width={158}
-                height={48}
+                width={150}
+                height={68}
                 className="max-h-12 w-full object-contain"
               />
               <Image
                 alt="Microsoft Office"
                 src="/office.svg"
-                width={158}
-                height={48}
+                width={150}
+                height={68}
                 className="max-h-12 w-full object-contain"
               />
               <Image
                 alt="HubSpot"
                 src="/hubspot.svg"
-                width={158}
-                height={48}
+                width={150}
+                height={68}
                 className="max-h-12 w-full object-contain"
               />
             </div>
@@ -80,29 +80,29 @@ export default function HeroEnterprise() {
               <Image
                 alt="Salesforce"
                 src="/salesforce.svg"
-                width={158}
-                height={48}
+                width={150}
+                height={68}
                 className="max-h-12 w-full object-contain"
               />
               <Image
                 alt="Google Suite"
                 src="/gSuite.svg"
-                width={158}
-                height={48}
+                width={150}
+                height={68}
                 className="max-h-12 w-full object-contain"
               />
               <Image
                 alt="Odoo"
                 src="/odoo2.svg"
-                width={158}
-                height={48}
+                width={150}
+                height={68}
                 className="max-h-12 w-full object-contain"
               />
               <Image
                 alt="Anthropic"
                 src="/anthropic.svg"
-                width={158}
-                height={48}
+                width={150}
+                height={68}
                 className="max-h-12 w-full object-contain"
               />
             </div>
