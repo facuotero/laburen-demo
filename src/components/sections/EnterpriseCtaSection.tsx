@@ -2,44 +2,8 @@
 
 export default function EnterpriseCtaSection() {
   return (
-    <div className=" dark:bg-gray-900 relative overflow-hidden">
+    <div className="relative overflow-hidden bg-white dark:bg-gray-900">
       {/* Background decorative pattern */}
-      <div className="absolute inset-0 -z-10">
-        <svg
-          className="absolute left-0 top-0 h-full w-full opacity-30"
-          fill="none"
-          viewBox="0 0 1440 800"
-          aria-hidden="true"
-        >
-          <defs>
-            <pattern
-              id="enterprise-pattern"
-              x="0"
-              y="0"
-              width="60"
-              height="60"
-              patternUnits="userSpaceOnUse"
-            >
-              <path
-                d="M0 60L60 0M30 90L90 30M-30 30L30 -30"
-                stroke="rgb(59 130 246)"
-                strokeWidth="1"
-                strokeDasharray="2,2"
-                fill="none"
-                opacity="0.5"
-              />
-            </pattern>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#enterprise-pattern)" />
-        </svg>
-
-        {/* Decorative borders */}
-        <div className="absolute top-0 left-0 right-0 h-16 bg-lineal-to-r from-pink-200 via-pink-300 to-pink-200 opacity-60"></div>
-        <div className="absolute bottom-0 left-0 right-0 h-16 bg-lineal-to-r from-pink-200 via-pink-300 to-pink-200 opacity-60"></div>
-        <div className="absolute top-0 bottom-0 left-0 w-16 bg-lineal-to-b from-blue-200 via-blue-300 to-blue-200 opacity-60"></div>
-        <div className="absolute top-0 bottom-0 right-0 w-16 bg-lineal-to-b from-blue-200 via-blue-300 to-blue-200 opacity-60"></div>
-      </div>
-
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-56">
           <div className="mb-8 flex justify-center">
