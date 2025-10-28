@@ -2,6 +2,8 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import localFont from "next/font/local"
+import { Navbar } from "@/components/shared/Navbar"
+import Footer2 from "@/components/shared/Footer2"
 
 // 🔤 Fuente principal (Inter)
 const inter = Inter({
@@ -35,7 +37,11 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${sourceSerif.variable} font-sans antialiased bg-(--color-background-dark) text-white`}
       >
-        {children}
+        <Navbar />
+        <main>
+          {children}
+        </main>
+        <Footer2 />
       </body>
     </html>
   )

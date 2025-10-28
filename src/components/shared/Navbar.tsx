@@ -9,7 +9,7 @@ import Link from 'next/link'
 const navigation = [
   { name: 'Partners', href: '#partners' },
   { name: 'Enterprise', href: '#enterprise' },
-  { name: 'Plans', href: '#plans' },
+  { name: 'Plans', href: 'plans' },
   { name: 'Resources', href: '#resources' },
 ]
 

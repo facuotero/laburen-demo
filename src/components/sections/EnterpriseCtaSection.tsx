@@ -35,10 +35,10 @@ export default function EnterpriseCtaSection() {
         </svg>
         
         {/* Decorative borders */}
-        <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-r from-pink-200 via-pink-300 to-pink-200 opacity-60"></div>
-        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-r from-pink-200 via-pink-300 to-pink-200 opacity-60"></div>
-        <div className="absolute top-0 bottom-0 left-0 w-16 bg-gradient-to-b from-blue-200 via-blue-300 to-blue-200 opacity-60"></div>
-        <div className="absolute top-0 bottom-0 right-0 w-16 bg-gradient-to-b from-blue-200 via-blue-300 to-blue-200 opacity-60"></div>
+        <div className="absolute top-0 left-0 right-0 h-16 bg-lineal-to-r from-pink-200 via-pink-300 to-pink-200 opacity-60"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-lineal-to-r from-pink-200 via-pink-300 to-pink-200 opacity-60"></div>
+        <div className="absolute top-0 bottom-0 left-0 w-16 bg-lineal-to-b from-blue-200 via-blue-300 to-blue-200 opacity-60"></div>
+        <div className="absolute top-0 bottom-0 right-0 w-16 bg-lineal-to-b from-blue-200 via-blue-300 to-blue-200 opacity-60"></div>
       </div>
       
       <div className="relative isolate px-6 pt-14 lg:px-8">
