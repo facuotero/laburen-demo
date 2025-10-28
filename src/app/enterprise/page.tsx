@@ -3,6 +3,8 @@
 import EnterpriseCtaSection from "@/components/sections/EnterpriseCtaSection";
 import Faq from "@/components/sections/Faq";
 import HeroEnterprise from "@/components/sections/HeroEnterpise";
+import Stats from "@/components/sections/Stats";
+import Usage from "@/components/sections/Usage";
 
 export default function EnterpriseSection() {
     const faqs = [
@@ -48,7 +50,10 @@ export default function EnterpriseSection() {
     <div className="bg-white dark:bg-gray-900 relative overflow-hidden">
         <HeroEnterprise />
         <Faq faqs={faqs} title={title} subtitle="" />
+        <Stats />
+        <Usage />
         <EnterpriseCtaSection />
+        
       </div>
   );
 }

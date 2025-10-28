@@ -1,9 +1,8 @@
-'use client'
+"use client";
 
 export default function EnterpriseCtaSection() {
-
   return (
-    <div className="bg-gray-50 dark:bg-gray-900 relative overflow-hidden">
+    <div className=" dark:bg-gray-900 relative overflow-hidden">
       {/* Background decorative pattern */}
       <div className="absolute inset-0 -z-10">
         <svg
@@ -33,14 +32,14 @@ export default function EnterpriseCtaSection() {
           </defs>
           <rect width="100%" height="100%" fill="url(#enterprise-pattern)" />
         </svg>
-        
+
         {/* Decorative borders */}
         <div className="absolute top-0 left-0 right-0 h-16 bg-lineal-to-r from-pink-200 via-pink-300 to-pink-200 opacity-60"></div>
         <div className="absolute bottom-0 left-0 right-0 h-16 bg-lineal-to-r from-pink-200 via-pink-300 to-pink-200 opacity-60"></div>
         <div className="absolute top-0 bottom-0 left-0 w-16 bg-lineal-to-b from-blue-200 via-blue-300 to-blue-200 opacity-60"></div>
         <div className="absolute top-0 bottom-0 right-0 w-16 bg-lineal-to-b from-blue-200 via-blue-300 to-blue-200 opacity-60"></div>
       </div>
-      
+
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-56">
           <div className="mb-8 flex justify-center">
@@ -53,12 +52,15 @@ export default function EnterpriseCtaSection() {
               Is your business ready
             </h1>
             <h1 className="text-balance text-5xl italic tracking-tight text-neutral-900 sm:text-6xl dark:text-white">
-              for the <span className="text-primary-500 italic">next level</span>?
+              for the{" "}
+              <span className="text-primary-500 italic">next level</span>?
             </h1>
             <p className="mt-8 text-pretty text-lg text-gray-600 sm:text-xl max-w-3xl mx-auto dark:text-gray-400">
               AI can be the competitive edge your organization needs.
               <br />
-              With Laburen Enterprise, we design AI Agents tailored to your goals, teams, and processes — bringing more efficiency, more impact, and more time for what really matters.
+              With Laburen Enterprise, we design AI Agents tailored to your
+              goals, teams, and processes — bringing more efficiency, more
+              impact, and more time for what really matters.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-4">
               <button className="rounded-full bg-white border border-gray-300 px-6 py-3 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 transition-colors">
@@ -66,15 +68,24 @@ export default function EnterpriseCtaSection() {
               </button>
               <button className="inline-flex items-center gap-2 rounded-full bg-primary-500 px-6 py-3 text-sm font-medium text-white shadow-sm hover:bg-green-600 transition-colors">
                 Explore Enterprise
-                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                <svg
+                  className="h-4 w-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                  />
                 </svg>
               </button>
             </div>
           </div>
         </div>
-
       </div>
     </div>
-  )
+  );
 }
