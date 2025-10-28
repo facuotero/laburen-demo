@@ -13,7 +13,7 @@ const inter = Inter({
 })
 
 const sourceSerif = localFont({
-  src: "./fonts/source-serif-pro.semibold.otf",
+  src: "../../public/fonts/source-serif-pro.semibold.otf",
   variable: "--font-source-serif",
   weight: "600",
   display: "swap",
