@@ -27,7 +27,7 @@ export function HeroSection() {
           </h1>
         </div>
 
-        <p className="mt-6 text-lg text-gray-400 max-w-2xl mx-auto">
+        <p className="mt-6 text-lg text-gray-400 mx-auto">
           Boost your business with Agents, virtual employees trained on your
           data — all powered by AI.
         </p>
