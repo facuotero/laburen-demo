@@ -11,7 +11,7 @@ const navigation = [
   { name: "Partners", href: "#partners" },
   { name: "Enterprise", href: "enterprise" },
   { name: "Plans", href: "plans" },
-  { name: "Resources", href: "#resources" },
+  { name: "Resources", href: "resources" },
 ];
 
 export function Navbar() {
