@@ -6,13 +6,13 @@ export default function HeroEnterprise() {
       <div className="relative isolate">
         <div className="mx-auto max-w-4xl sm:py-16 lg:mt-16">
           <div className="text-center">
-            <h1 className="text-primary text-5xl italic tracking-tight text-neutral-600 sm:text-6xl dark:text-white mb-2 font-extralight">
+            <h1 className="text-primary text-5xl italic tracking-tight text-neutral-600 sm:text-6xl mb-2 font-extralight">
               Scale your business with
             </h1>
-            <h1 className="text-neutral-900 italic text-7xl tracking-tight sm:text-6xl dark:text-white">
+            <h1 className="text-neutral-900 italic text-7xl tracking-tight sm:text-6xl">
               AI Employees
             </h1>
-            <p className="mt-8 text-pretty text-lg text-gray-600 sm:text-xl max-w-3xl mx-auto dark:text-gray-400">
+            <p className="mt-8 text-pretty text-lg text-gray-600 sm:text-xl max-w-3xl mx-auto">
               Get started immediately for free. Upgrade for more credits, usage
               <br />
               and collaboration.
@@ -42,7 +42,7 @@ export default function HeroEnterprise() {
         </div>
         <div className="mx-auto max-w-7xl px-6 lg:px-8 space-y-8">
           
-          <div className="p-6 sm:p-10 dark:bg-white/5">
+          <div className="p-6 sm:p-10">
             <div className="mx-auto grid grid-cols-2 lg:grid-cols-4 items-center gap-x-8 gap-y-12 sm:gap-x-10 sm:gap-y-14 lg:max-w-none">
               <Image
                 alt="AWS"
@@ -75,7 +75,7 @@ export default function HeroEnterprise() {
             </div>
           </div>
 
-          <div className="p-6 sm:p-10 dark:bg-white/5">
+          <div className="p-6 sm:p-10">
             <div className="mx-auto grid grid-cols-2 lg:grid-cols-4 items-center gap-x-8 gap-y-12 sm:gap-x-10 sm:gap-y-14 lg:max-w-none">
               <Image
                 alt="Salesforce"

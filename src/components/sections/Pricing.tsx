@@ -5,25 +5,25 @@ export default function Pricing() {
     <div className="mx-auto max-w-7xl px-6 lg:px-8 mb-8">
       <div className="mx-auto grid max-w-lg grid-cols-1 gap-8 lg:max-w-4xl lg:grid-cols-2">
         {/* Pro Plan */}
-        <div className="flex flex-col justify-between rounded-2xl bg-white p-8 shadow-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+        <div className="flex flex-col justify-between rounded-2xl bg-white p-8 shadow-lg border border-gray-200">
           <div>
             <div className="flex items-center justify-between">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+              <h3 className="text-lg font-semibold text-gray-900">
                 Pro
               </h3>
             </div>
-            <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">
+            <p className="mt-4 text-sm text-gray-600">
               For professionals and small teams starting with AI.
             </p>
             <p className="mt-6">
-              <span className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white">
+              <span className="text-4xl font-bold tracking-tight text-gray-900">
                 $19
               </span>
-              <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+              <span className="text-sm font-medium text-gray-500">
                 /monthly
               </span>
             </p>
-            <ul className="mt-8 space-y-3 text-sm text-gray-600 dark:text-gray-300">
+            <ul className="mt-8 space-y-3 text-sm text-gray-600">
               <li className="flex gap-x-3">
                 <svg
                   className="h-6 w-5 flex-none text-primary-500"
@@ -96,13 +96,13 @@ export default function Pricing() {
               </li>
             </ul>
           </div>
-          <button className="mt-8 block w-full rounded-md bg-black px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black dark:bg-white dark:text-gray-900 dark:hover:bg-gray-100">
+          <button className="mt-8 block w-full rounded-md bg-black px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">
             Upgrade to Pro
           </button>
         </div>
 
         {/* Business Plan */}
-        <div className="flex flex-col justify-between rounded-2xl bg-white p-8 shadow-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700 relative">
+        <div className="flex flex-col justify-between rounded-2xl bg-white p-8 shadow-lg border border-gray-200 relative">
           <div className="absolute -top-4 left-1/2 -translate-x-1/2">
             <span className="inline-flex items-center rounded-full bg-primary-500 px-4 py-1 text-xs font-medium text-white">
               Recommended
@@ -110,22 +110,22 @@ export default function Pricing() {
           </div>
           <div>
             <div className="flex items-center justify-between">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+              <h3 className="text-lg font-semibold text-gray-900">
                 Business
               </h3>
             </div>
-            <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">
+            <p className="mt-4 text-sm text-gray-600">
               For teams ready for more power and advanced support.
             </p>
             <p className="mt-6">
-              <span className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white">
+              <span className="text-4xl font-bold tracking-tight text-gray-900">
                 $99
               </span>
-              <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+              <span className="text-sm font-medium text-gray-500">
                 /monthly
               </span>
             </p>
-            <ul className="mt-8 space-y-3 text-sm text-gray-600 dark:text-gray-300">
+            <ul className="mt-8 space-y-3 text-sm text-gray-600">
               <li className="flex gap-x-3">
                 <svg
                   className="h-6 w-5 flex-none text-primary-500"
@@ -184,7 +184,7 @@ export default function Pricing() {
               </li>
             </ul>
           </div>
-          <button className="mt-8 block w-full rounded-md bg-black px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black dark:bg-white dark:text-gray-900 dark:hover:bg-gray-100">
+          <button className="mt-8 block w-full rounded-md bg-black px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">
             Start a Business Plan
           </button>
         </div>
@@ -192,18 +192,18 @@ export default function Pricing() {
 
       {/* Enterprise Plan */}
       <div className="mx-auto mt-8 max-w-lg lg:max-w-4xl">
-        <div className="flex flex-row rounded-2xl bg-linear-to-r p-8 border border-primary-500 dark:from-green-900/20 dark:to-green-800/20 dark:border-green-700 relative overflow-hidden">
+        <div className="flex flex-row rounded-2xl bg-linear-to-r p-8 border border-primary-500 relative overflow-hidden">
           {/* Contenido principal a la izquierda */}
           <div className="flex-1 pr-8">
             <div className="flex items-center justify-between">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+              <h3 className="text-lg font-semibold text-gray-900">
                 Enterprise
               </h3>
             </div>
-            <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">
+            <p className="mt-4 text-sm text-gray-600">
               For ambitious companies ready to scale with AI.
             </p>
-            <ul className="mt-8 space-y-3 text-sm text-gray-600 dark:text-gray-300">
+            <ul className="mt-8 space-y-3 text-sm text-gray-600">
               <li className="flex gap-x-3">
                 <svg
                   className="h-6 w-5 flex-none text-green-500"

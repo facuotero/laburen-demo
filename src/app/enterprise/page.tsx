@@ -47,7 +47,7 @@ export default function EnterpriseSection() {
     const title = "Boost your business with Laburen Enterprise";
 
   return (
-    <div className="bg-white dark:bg-gray-900 relative overflow-hidden">
+    <div className="bg-white relative overflow-hidden">
         <HeroEnterprise />
         <Faq faqs={faqs} title={title} subtitle="" />
         <Stats />

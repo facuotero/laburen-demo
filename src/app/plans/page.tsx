@@ -51,7 +51,7 @@ export default function PlansSection() {
   const subtitle =
     "Find answers to the most common questions about Laburen, our technology, and how it can help you transform the way you work.";
   return (
-    <div className="bg-white dark:bg-gray-900 relative overflow-hidden">
+    <div className="bg-white relative overflow-hidden">
       {/* Background decorative pattern */}
       <div className="relative isolate">
         <div className="mx-auto max-w-4xl sm:py-16 lg:mt-16">
@@ -61,13 +61,13 @@ export default function PlansSection() {
             </div>
           </div>
           <div className="text-center">
-            <h1 className="text-primary text-5xl italic tracking-tight text-neutral-600 sm:text-6xl dark:text-white mb-2 font-extralight">
+            <h1 className="text-primary text-5xl italic tracking-tight text-neutral-600 sm:text-6xl mb-2 font-extralight">
               Plans and Pricing
             </h1>
-            <h1 className="text-primary-500 italic text-7xl font-(--font-source-serif) tracking-tight sm:text-6xl dark:text-white">
+            <h1 className="text-primary-500 italic text-7xl font-(--font-source-serif) tracking-tight sm:text-6xl">
               Growth with AI
             </h1>
-            <p className="mt-8 text-pretty text-4xl text-neutral-800 sm:text-xl max-w-3xl mx-auto dark:text-gray-400">
+            <p className="mt-8 text-pretty text-4xl text-neutral-800 sm:text-xl max-w-3xl mx-auto">
               Get started immediately for free. Upgrade for more credits, usage
               <br />
               and collaboration.

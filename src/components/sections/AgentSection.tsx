@@ -4,10 +4,10 @@ import AgentCard from "@/components/AgentCard";
 
 export default function AgentsSection() {
   return (
-    <section className="bg-white dark:bg-neutral-950 py-24 sm:py-32">
+    <section className="bg-white py-24 sm:py-32 rounded-t-3xl">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <h2 className="text-center text-4xl font-semibold tracking-tight text-neutral-900 dark:text-white">
-          Create, Connect, and Power Your Business with AI employees
+        <h2 className="text-2xl tracking-tight text-neutral-900 max-w-3xl leading-tight lg:text-h2">
+          Create, Connect, and Power <br />Your Business with AI employees
         </h2>
         
         {/* Primera AgentCard - Empleados AI */}
