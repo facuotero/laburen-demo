@@ -119,7 +119,7 @@ export default function Footer() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-neutral-100 hover:text-neutral-200 dark:text-gray-400 dark:hover:text-gray-300"
+                  className="text-neutral-100 hover:text-neutral-200"
                 >
                   <span className="sr-only">{item.name}</span>
                   <item.icon aria-hidden="true" className="size-6" />
@@ -130,7 +130,7 @@ export default function Footer() {
           <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm/6 font-semibold text-neutral-200 dark:text-white">
+                <h3 className="text-sm/6 font-semibold text-neutral-200">
                   Website
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
@@ -138,7 +138,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm/6 text-neutral-100 hover:text-neutral-400 dark:text-gray-400 dark:hover:text-gray-300"
+                        className="text-sm/6 text-neutral-100 hover:text-neutral-400"
                       >
                         + {item.name}
                       </a>
@@ -147,7 +147,7 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-10 md:mt-0">
-                <h3 className="text-sm/6 font-semibold text-neutral-200 dark:text-white">
+                <h3 className="text-sm/6 font-semibold text-neutral-200">
                   Resources
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
@@ -155,7 +155,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm/6 text-neutral-100 hover:text-neutral-400 dark:text-gray-400 dark:hover:text-gray-300"
+                        className="text-sm/6 text-neutral-100 hover:text-neutral-400"
                       >
                         + {item.name}
                       </a>
@@ -166,7 +166,7 @@ export default function Footer() {
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm/6 font-semibold text-neutral-200 dark:text-white">
+                <h3 className="text-sm/6 font-semibold text-neutral-200">
                   Industries
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
@@ -174,7 +174,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm/6 text-neutral-100 hover:text-neutral-400 dark:text-gray-400 dark:hover:text-gray-300"
+                        className="text-sm/6 text-neutral-100 hover:text-neutral-400"
                       >
                         + {item.name}
                       </a>
@@ -185,8 +185,8 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24 dark:border-white/10">
-          <p className="text-sm/6 text-gray-600 dark:text-gray-400">
+        <div className="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24">
+          <p className="text-sm/6 text-gray-600">
             &copy; 2024 Your Company, Inc. All rights reserved.
           </p>
         </div>

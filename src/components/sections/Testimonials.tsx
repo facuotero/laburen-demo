@@ -53,7 +53,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <div className="bg-gray-50 py-24 sm:py-32 dark:bg-gray-900 relative overflow-hidden">
+    <div className="bg-gray-50 py-24 sm:py-32 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 -z-10">
         <svg
@@ -88,7 +88,7 @@ export default function Testimonials() {
           <div className="inline-flex items-center rounded-full bg-primary-700 px-4 py-2 text-sm font-medium mb-6">
             TESTIMONIALS
           </div>
-          <h2 className="text-balance text-4xl font-regular tracking-tight text-neutral-600 sm:text-5xl dark:text-gray-300">
+          <h2 className="text-balance text-4xl font-regular tracking-tight text-neutral-600 sm:text-5xl">
             Companies around the world are already hiring AI Agents with Laburen.com
           </h2>
         </div>  
@@ -96,8 +96,8 @@ export default function Testimonials() {
           <div className="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
             {testimonials.map((testimonial, i) => (
               <div key={i} className="pt-8 sm:inline-block sm:w-full sm:px-4">
-                <figure className="rounded-2xl bg-white p-8 text-sm/6 shadow-sm border border-gray-100 dark:bg-white/[0.025] dark:border-gray-800">
-                  <blockquote className="text-gray-900 dark:text-gray-100">
+                <figure className="rounded-2xl bg-white p-8 text-sm/6 shadow-sm border border-gray-100">
+                  <blockquote className="text-gray-900">
                     <p>{`"${testimonial.body}"`}</p>
                   </blockquote>
                   <figcaption className="mt-6 flex items-center gap-x-4">
@@ -106,11 +106,11 @@ export default function Testimonials() {
                       src={testimonial.author.imageUrl}
                       width={40}
                       height={40}
-                      className="rounded-full bg-gray-50 dark:bg-gray-800"
+                      className="rounded-full bg-gray-50"
                     />
                     <div>
-                      <div className="font-semibold text-gray-900 dark:text-white">{testimonial.author.name}</div>
-                      <div className="text-gray-600 dark:text-gray-400">{`@${testimonial.author.handle}`}</div>
+                      <div className="font-semibold text-gray-900">{testimonial.author.name}</div>
+                      <div className="text-gray-600">{`@${testimonial.author.handle}`}</div>
                     </div>
                   </figcaption>
                 </figure>
@@ -121,7 +121,7 @@ export default function Testimonials() {
         
         {/* See more button */}
         <div className="mt-16 text-center">
-          <button className="inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3 text-sm font-medium text-gray-700 shadow-sm border border-gray-200 hover:bg-gray-50 transition-colors dark:bg-gray-800 dark:text-gray-300 dark:border-gray-700 dark:hover:bg-gray-700">
+          <button className="inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3 text-sm font-medium text-gray-700 shadow-sm border border-gray-200 hover:bg-gray-50 transition-colors">
             See more
           </button>
         </div>

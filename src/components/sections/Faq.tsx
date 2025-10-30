@@ -10,7 +10,7 @@ import { Button } from "../ui/button";
 
 export default function Faq({faqs, title, subtitle} : {faqs: {question: string; answer: string}[], title: string, subtitle: string}) {
   return (
-    <div className="bg-white dark:bg-gray-900">
+    <div>
       <div className="mx-auto max-w-7xl px-6 py-24 sm:pt-32 lg:px-8 lg:py-40">
         <div className="lg:grid lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-5">
@@ -25,8 +25,8 @@ export default function Faq({faqs, title, subtitle} : {faqs: {question: string; 
            </Button>
           </div>
           <div className="mt-10 lg:col-span-7 lg:mt-0">
-            <dl className="space-y-10 border border-gray-50 p-5 rounded-xl shadow-md dark:border-gray-700">
-              <dl className="divide-y divide-gray-900/10 dark:divide-white/10">
+            <dl className="space-y-10 border border-gray-50 p-5 rounded-xl shadow-md">
+              <dl className="divide-y divide-gray-900/10">
                 {faqs.map((faq) => (
                   <Disclosure
                     key={faq.question}
@@ -34,8 +34,8 @@ export default function Faq({faqs, title, subtitle} : {faqs: {question: string; 
                     className="py-6 first:pt-0 last:pb-0"
                   >
                     <dt>
-                      <DisclosureButton className="group flex w-full items-start justify-between text-left dark:text-white">
-                        <span className="text-lg text-neutral-900 dark:text-white">{faq.question}</span>
+                      <DisclosureButton className="group flex w-full items-start justify-between text-left">
+                        <span className="text-lg text-neutral-900">{faq.question}</span>
                         <span className="ml-6 flex h-7 items-center">
                           <PlusSmallIcon
                             aria-hidden="true"
@@ -49,7 +49,7 @@ export default function Faq({faqs, title, subtitle} : {faqs: {question: string; 
                       </DisclosureButton>
                     </dt>
                     <DisclosurePanel as="dd" className="mt-2 pr-12">
-                      <p className=" text-neutral-900 dark:text-gray-400 text-base">
+                      <p className=" text-neutral-900 text-base">
                         {faq.answer}
                       </p>
                     </DisclosurePanel>

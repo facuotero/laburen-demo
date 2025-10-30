@@ -1,12 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  /* 🌙 Dark mode por clase */
-  --dark-mode: class;
-
   /* 🎨 Colores */
   --color-background-light: #FAFAFA;
-  --color-background-dark: #0A0A0A;
 
   --color-primary-50: #E6F9E8;
   --color-primary-100: #F3FCEE;
@@ -74,7 +70,7 @@
 /* 🌐 Base global */
 @layer base {
   html {
-    @apply bg-[var(--color-background-dark)] text-white antialiased;
+    @apply bg-[var(--color-background-light)] antialiased;
   }
 
   body {

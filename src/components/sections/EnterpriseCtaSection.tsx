@@ -2,7 +2,7 @@
 
 export default function EnterpriseCtaSection() {
   return (
-    <div className="relative overflow-hidden bg-white dark:bg-gray-900">
+    <div className="relative overflow-hidden bg-neutral-50">
       {/* Background decorative pattern */}
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-56">
@@ -12,14 +12,14 @@ export default function EnterpriseCtaSection() {
             </div>
           </div>
           <div className="text-center">
-            <h1 className="text-balance text-5xl italic tracking-tight text-neutral-900 sm:text-6xl dark:text-white mb-2">
+            <h1 className="text-balance text-5xl italic tracking-tight text-neutral-900 sm:text-6xl mb-2">
               Is your business ready
             </h1>
-            <h1 className="text-balance text-5xl italic tracking-tight text-neutral-900 sm:text-6xl dark:text-white">
+            <h1 className="text-balance text-5xl italic tracking-tight text-neutral-900 sm:text-6xl">
               for the{" "}
               <span className="text-primary-500 italic">next level</span>?
             </h1>
-            <p className="mt-8 text-pretty text-lg text-gray-600 sm:text-xl max-w-3xl mx-auto dark:text-gray-400">
+            <p className="mt-8 text-pretty text-lg text-gray-600 sm:text-xl max-w-3xl mx-auto">
               AI can be the competitive edge your organization needs.
               <br />
               With Laburen Enterprise, we design AI Agents tailored to your

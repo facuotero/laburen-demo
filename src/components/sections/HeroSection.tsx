@@ -3,7 +3,7 @@ import { AgentInput } from "@/components/AgentInput";
 
 export function HeroSection() {
   return (
-    <section className="relative isolate overflow-hidden bg-linear-to-b from-[#0A0A0A] via-neutral-900 to-neutral-950 text-white pt-32 pb-24 sm:pb-40">
+    <section className="relative isolate overflow-hidden bg-linear-to-b from-[#0A0A0A] via-neutral-900 to-neutral-950 text-white pt-32 pb-10">
       {/* Background glow */}
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,rgba(76,199,34,0.15),transparent_70%)]" />
 
@@ -27,7 +27,7 @@ export function HeroSection() {
           </h1>
         </div>
 
-        <p className="mt-6 text-lg text-gray-400 max-w-2xl mx-auto">
+        <p className="mt-6 text-lg text-gray-400 mx-auto">
           Boost your business with Agents, virtual employees trained on your
           data — all powered by AI.
         </p>

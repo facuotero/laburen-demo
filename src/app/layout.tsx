@@ -33,9 +33,9 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" className="white">
       <body
-        className={`${inter.variable} ${sourceSerif.variable} font-sans antialiased bg-(--color-background-dark) text-white`}
+        className={`${inter.variable} ${sourceSerif.variable} font-sans antialiased text-white`}
       >
         <Navbar />
         <main>

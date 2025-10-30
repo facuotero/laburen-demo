@@ -118,21 +118,21 @@ export function AgentCard({ agents, type = 'employees' }: AgentCardProps) {
   return (
         <section className="mt-10">
           <div className="flex items-center justify-between">
-        <h2 className="text-md font-semibold text-neutral-600 dark:text-white">
+        <h2 className="text-md font-semibold text-neutral-600">
           {sectionTitles[type]}
         </h2>
         <a
           href="#"
-          className="text-sm font-medium text-neutral-400 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-white transition-colors"
+          className="text-sm font-medium text-neutral-400 hover:text-neutral-700 transition-colors"
         >
           {linkTexts[type]}
         </a>
       </div>
-    <div className="mt-2 grid gap-6 lg:grid-cols-3 lg:auto-rows-[120px]">
+    <div className="mt-2 grid grid-cols-2 gap-3 lg:grid-cols-3 lg:auto-rows-[120px]">
       {/* CARD PRINCIPAL (ancha) */}
-      <div className="lg:col-span-2 relative flex items-center rounded-lg border border-[#93E2AC] bg-white/5 p-6 shadow-sm">
+      <div className="col-span-2 relative flex items-center rounded-lg border border-[#93E2AC] bg-white/5 p-6 shadow-sm">
         <div>
-          <h3 className="text-2xl font-medium text-neutral-900 dark:text-white">
+          <h3 className="text-2xl font-medium text-neutral-900">
             {titles[type].split('\n').map((line, index) => (
               <span key={index}>
                 {line}
@@ -154,37 +154,43 @@ export function AgentCard({ agents, type = 'employees' }: AgentCardProps) {
 
       {/* CARDS PEQUEÑAS DE AGENTES */}
       {selectedAgents.map((agent) => (
-      <div
-      key={agent.name}
-      className="flex items-start gap-3 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white/10 dark:bg-white/5 p-4 shadow-sm hover:bg-white/20 transition-colors"
-    >
-      {/* Avatar */}
-      <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full">
-        <Image
-          src={agent.avatar || `/images/agents-${agent.name.toLowerCase()}.png`}
-          alt={agent.name}
-          fill
-          sizes="48px"
-          className="object-cover"
-        />
-      </div>
+        <div
+          key={agent.name}
+          className="rounded-xl border border-neutral-200 bg-white/10 p-4 shadow-sm hover:bg-white/20 transition-colors"
+        >
+          {/* Avatar */}
+          <div className="flex items-center gap-3 w-full mb-2">
+            <div className="flex gap-2">
+              <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full">
+                <Image
+                  src={agent.avatar || `/images/agents-${agent.name.toLowerCase()}.png`}
+                  alt={agent.name}
+                  fill
+                  sizes="48px"
+                  className="object-cover"
+                />
+              </div>
+              <div>
+                <h4 className="font-medium text-neutral-900">
+                  {agent.name}
+                </h4>
+                <p className="text-sm text-neutral-500 leading-snug line-clamp-2">
+                  {agent.role}
+                </p>
+              </div>
+            </div>
+          </div>
 
-      {/* Info */}
-      <div className="flex flex-col">
-        <h4 className="font-medium text-neutral-900 dark:text-white">
-          {agent.name}
-        </h4>
-        <p className="text-sm text-neutral-500 dark:text-neutral-400 leading-snug line-clamp-2">
-          {agent.role}
-        </p>
-        <p className="text-sm text-neutral-500 dark:text-neutral-400 leading-snug line-clamp-2">
-            {agent.description}
-        </p>
-      </div>
-    </div>
+          {/* Info */}
+          <div>
+            <p className="text-sm text-neutral-500 leading-snug line-clamp-2">
+                {agent.description}
+            </p>
+          </div>
+        </div>
       ))}
     </div>
-        </section>
+    </section>
   );
 }
 

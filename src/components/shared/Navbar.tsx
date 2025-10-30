@@ -24,10 +24,10 @@ export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="absolute inset-x-0 top-0 z-50">
+    <header className="absolute inset-x-0 top-0 z-50 lg:px-6 lg:py-6">
       <nav
         aria-label="Global"
-        className="flex items-center justify-between px-6 py-6 lg:px-12 bg-gray-20 backdrop-blur-md"
+        className="flex items-center justify-between px-6 py-6 bg-white/10 rounded-b-2xl lg:rounded-[99px] lg:px-12"
       >
         {/* Logo */}
         <div className="flex lg:flex-1">

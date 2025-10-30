@@ -6,7 +6,7 @@ const stats = [
 
 export default function Stats() {
   return (
-    <div className="bg-white py-24 sm:py-32 dark:bg-gray-900">
+    <div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:max-w-none">
           <div className="text-center">
@@ -17,11 +17,11 @@ export default function Stats() {
           </div>
           <dl className="mt-16 grid grid-cols-1 gap-6 text-center sm:grid-cols-2 lg:grid-cols-3">
             {stats.map((stat) => (
-              <div key={stat.id} className="flex flex-col bg-white border border-green-200 rounded-2xl p-8 shadow-sm dark:bg-gray-800 dark:border-green-700">
+              <div key={stat.id} className="flex flex-col bg-white border border-green-200 rounded-2xl p-8 shadow-sm">
                 <dd className={`order-first text-5xl font-bold tracking-tight ${stat.color}`}>
                   <span className="text-primary-600">{stat.prefix}</span> {stat.value}
                 </dd>
-                <dt className="mt-4 text-base text-gray-600 dark:text-gray-300">{stat.name}</dt>
+                <dt className="mt-4 text-base text-gray-600">{stat.name}</dt>
               </div>
             ))}
           </dl>
