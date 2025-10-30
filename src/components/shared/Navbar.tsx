@@ -27,7 +27,7 @@ export function Navbar() {
     <header className="absolute inset-x-0 top-0 z-50 lg:px-6 lg:py-6">
       <nav
         aria-label="Global"
-        className="flex items-center justify-between px-6 py-6 bg-white/10 rounded-b-2xl lg:rounded-[99px] lg:px-12"
+        className="flex items-center justify-between px-6 py-6 bg-white/10 rounded-b-2xl lg:rounded-[99px] lg:px-12 border border-neutral-200"
       >
         {/* Logo */}
         <div className="flex lg:flex-1">
