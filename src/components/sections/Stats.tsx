@@ -6,11 +6,11 @@ const stats = [
 
 export default function Stats() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:max-w-none">
           <div className="text-center">
-            <h2 className="text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+            <h2 className="text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl dark:text-white">
              More than 10.000 companies in Latin America already
              <br />use Laburen.com to grow with Artificial Intelligence
             </h2>

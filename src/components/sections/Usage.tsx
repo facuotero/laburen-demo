@@ -33,7 +33,7 @@ const useCases = [
 
 export default function UsageSection() {
   return (
-    <div className="bg-white">
+    <div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-balance text-4xl font-semibold tracking-tight text-neutral-900 sm:text-5xl">
@@ -64,10 +64,10 @@ export default function UsageSection() {
 
               <div className="p-4 flex flex-col justify-between">
                 <div className="group relative grow">
-                  <h3 className="text-lg font-semibold text-gray-900">
+                  <h3 className="text-lg font-semibold text-neutral-900">
                     {useCase.title}
                   </h3>
-                  <p className="mt-2 text-sm text-gray-600">
+                  <p className="mt-2 text-sm text-neutral-600">
                     {useCase.description}
                   </p>
                 </div>

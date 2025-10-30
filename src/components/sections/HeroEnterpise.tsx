@@ -41,73 +41,79 @@ export default function HeroEnterprise() {
           </div>
         </div>
         <div className="mx-auto max-w-7xl px-6 lg:px-8 space-y-8">
-          
           <div className="p-6 sm:p-10">
-            <div className="mx-auto grid grid-cols-2 lg:grid-cols-4 items-center gap-x-8 gap-y-12 sm:gap-x-10 sm:gap-y-14 lg:max-w-none">
-              <Image
-                alt="AWS"
-                src="/aws.svg"
-                width={158}
-                height={48}
-                className="max-h-12 w-full object-contain"
-              />
-              <Image
-                alt="OpenAI"
-                src="/openAI.svg"
-                width={150}
-                height={68}
-                className="max-h-12 w-full object-contain"
-              />
-              <Image
-                alt="Microsoft Office"
-                src="/office.svg"
-                width={150}
-                height={68}
-                className="max-h-12 w-full object-contain"
-              />
-              <Image
-                alt="HubSpot"
-                src="/hubspot.svg"
-                width={150}
-                height={68}
-                className="max-h-12 w-full object-contain"
-              />
+            <div className="mx-auto grid grid-cols-2 lg:grid-cols-4 items-center max-w-[370px] max-h-[104px] md:max-w-[600px] md:max-h-9 lg:max-w-[600px] lg:max-h-9">
+              <div className="relative w-10 h-7 md:w-22 md:h-6 lg:w-22 lg:h-6">
+                <Image
+                  alt="AWS"
+                  src="/aws.svg"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <div className="relative w-10 h-7 md:w-22 md:h-6 lg:w-22 lg:h-6">
+                <Image
+                  alt="OpenAI"
+                  src="/openAI.svg"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <div className="relative w-10 h-7 md:w-22 md:h-6 lg:w-22 lg:h-6">
+                <Image
+                  alt="Microsoft"
+                  src="/office.svg"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <div className="relative w-10 h-7 md:w-22 md:h-6 lg:w-22 lg:h-6">
+                <Image
+                  alt="Hubspot"
+                  src="/hubspot.svg"
+                  fill
+                  className="object-contain"
+                />
+              </div>
             </div>
           </div>
 
           <div className="p-6 sm:p-10">
-            <div className="mx-auto grid grid-cols-2 lg:grid-cols-4 items-center gap-x-8 gap-y-12 sm:gap-x-10 sm:gap-y-14 lg:max-w-none">
-              <Image
-                alt="Salesforce"
-                src="/salesforce.svg"
-                width={150}
-                height={68}
-                className="max-h-12 w-full object-contain"
-              />
-              <Image
-                alt="Google Suite"
-                src="/gSuite.svg"
-                width={150}
-                height={68}
-                className="max-h-12 w-full object-contain"
-              />
-              <Image
-                alt="Odoo"
-                src="/odoo2.svg"
-                width={150}
-                height={68}
-                className="max-h-12 w-full object-contain"
-              />
-              <Image
-                alt="Anthropic"
-                src="/anthropic.svg"
-                width={150}
-                height={68}
-                className="max-h-12 w-full object-contain"
-              />
+            <div className="mx-auto grid grid-cols-2 lg:grid-cols-4 items-center gap-x-8 gap-y-12 sm:gap-x-10 sm:gap-y-14 max-w-[370px] max-h-[104px] md:max-w-[600px] md:max-h-9 lg:max-w-[600px] lg:max-h-9">
+              <div className="relative w-10 h-7 md:w-22 md:h-6 lg:w-22 lg:h-6">
+                <Image
+                  alt="Salesforce"
+                  src="/salesforce.svg"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <div className="relative w-10 h-7 md:w-22 md:h-6 lg:w-22 lg:h-6">
+                <Image
+                  alt="Google Suite"
+                  src="/gSuite.svg"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <div className="relative w-10 h-7 md:w-22 md:h-6 lg:w-22 lg:h-6">
+                <Image
+                  alt="Odoo"
+                  src="/odoo2.svg"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <div className="relative w-10 h-7 md:w-22 md:h-6 lg:w-22 lg:h-6">
+                <Image
+                  alt="Anthropic"
+                  src="/anthropic.svg"
+                  fill
+                  className="object-contain"
+                />
+              </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>

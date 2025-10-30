@@ -101,9 +101,16 @@ export default function Footer() {
               src="/logo_green.svg"
               width={192}
               height={40}
-              className="h-9 w-auto"
+              className="h-9 w-auto dark:hidden"
             />
-            <p className="text-balance text-sm/6 text-neutral-200">
+            <Image
+              alt="Company name"
+              src="/logo_green.svg"
+              width={192}
+              height={40}
+              className="hidden h-9 w-auto dark:block"
+            />
+            <p className="text-balance text-sm/6 text-neutral-200 dark:text-gray-400">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt.
             </p>

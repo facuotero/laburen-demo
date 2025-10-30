@@ -2,7 +2,7 @@
 
 export default function EnterpriseCtaSection() {
   return (
-    <div className="relative overflow-hidden bg-white">
+    <div className="relative overflow-hidden bg-neutral-50">
       {/* Background decorative pattern */}
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-56">
