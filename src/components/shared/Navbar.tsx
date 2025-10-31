@@ -19,8 +19,8 @@ export function Navbar() {
   // 🎨 Definí qué rutas usan qué color de texto
   const isHome = ["/",].includes(pathname); // ejemplo
   const borderColor = isHome
-    ? "border-transparent"
-    : "border-neutral-200";
+    ? "border border-transparent"
+    : "border border-neutral-200";
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const textColor = isHome
     ? "text-white hover:text-neutral-200"
@@ -30,7 +30,7 @@ export function Navbar() {
     <header className="absolute inset-x-0 top-0 z-50 lg:px-6 lg:py-6">
       <nav
         aria-label="Global"
-        className={`flex items-center justify-between px-6 py-6 bg-white/10 rounded-b-2xl lg:rounded-[99px] lg:px-12 border ${borderColor}`}
+        className={`flex items-center justify-between px-6 py-6 bg-white/10 rounded-b-2xl lg:rounded-[99px] lg:px-12 ${borderColor}`}
       >
         {/* Logo */}
         <div className="flex lg:flex-1">
