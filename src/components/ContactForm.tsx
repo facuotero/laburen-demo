@@ -13,7 +13,7 @@ export default function ContactForm() {
             <div className="mt-10 lg:mt-0">
               <div className="relative w-[64px] h-[64px] rounded-xl flex items-center justify-center">
                 <Image
-                  src="/isologotipo_verde.svg"
+                  src="/Isologotipo_verde.svg"
                   alt="Laburen Logo"
                   fill
                 />
