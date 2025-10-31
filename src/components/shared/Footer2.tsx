@@ -92,16 +92,16 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer className="bg-linear-to-b from-[#0A0A0A] via-neutral-900 to-neutral-950">
-      <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="space-y-8">
+    <footer className="p-2 lg:p-4">
+      <div className="rounded-3xl bg-[#171717] bg-[url('/footer-img.png')] bg-no-repeat bg-position-[3.227px_-261.447px] bg-size-[100%_305.934%] h-auto py-8 px-4 lg:px-12 lg:py-16 lg:h-[455px]">
+        <div className="flex w-full mb-12 flex-wrap px-2 lg:px-8">
+          <div className="h-auto w-full mb-6 lg:mb-0 lg:h-[217px] lg:w-[247px]">
             <Image
               alt="Company name"
               src="/logo_green.svg"
               width={192}
               height={40}
-              className="h-9 w-auto dark:hidden"
+              className="h-9 w-auto mb-4"
             />
             <Image
               alt="Company name"
@@ -114,81 +114,88 @@ export default function Footer() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt.
             </p>
-            <div className="flex gap-x-6">
-              {navigation.social.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-neutral-100 hover:text-neutral-200"
-                >
-                  <span className="sr-only">{item.name}</span>
-                  <item.icon aria-hidden="true" className="size-6" />
-                </a>
-              ))}
-            </div>
           </div>
-          <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-sm/6 font-semibold text-neutral-200">
-                  Website
-                </h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {navigation.solutions.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm/6 text-neutral-100 hover:text-neutral-400"
-                      >
-                        + {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-10 md:mt-0">
-                <h3 className="text-sm/6 font-semibold text-neutral-200">
-                  Resources
-                </h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {navigation.support.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm/6 text-neutral-100 hover:text-neutral-400"
-                      >
-                        + {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-sm/6 font-semibold text-neutral-200">
-                  Industries
-                </h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {navigation.company.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm/6 text-neutral-100 hover:text-neutral-400"
-                      >
-                        + {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+          <div className="w-1/3 lg:w-[323px] h-[217px] lg:pl-40">
+            <h3 className="text-sm/6 font-semibold text-neutral-200 mb-4">
+              Website
+            </h3>
+            <ul role="list" className="space-y-1">
+              {navigation.solutions.map((item) => (
+                <li key={item.name}>
+                  <a
+                    href={item.href}
+                    className="text-sm/6 text-neutral-100 hover:text-neutral-400"
+                  >
+                    + {item.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="w-1/3 lg:w-[323px] h-[217px] lg:pl-40">
+            <h3 className="text-sm/6 font-semibold text-neutral-200 mb-4">
+              Resources
+            </h3>
+            <ul role="list" className="space-y-1">
+              {navigation.support.map((item) => (
+                <li key={item.name}>
+                  <a
+                    href={item.href}
+                    className="text-sm/6 text-neutral-100 hover:text-neutral-400"
+                  >
+                    + {item.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="w-1/3 lg:w-[323px] h-[217px] lg:pl-40">
+            <h3 className="text-sm/6 font-semibold text-neutral-200 mb-4">
+              Industries
+            </h3>
+            <ul role="list" className="space-y-1">
+              {navigation.company.map((item) => (
+                <li key={item.name}>
+                  <a
+                    href={item.href}
+                    className="text-sm/6 text-neutral-100 hover:text-neutral-400"
+                  >
+                    + {item.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
-        <div className="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24">
-          <p className="text-sm/6 text-gray-600">
-            &copy; 2024 Your Company, Inc. All rights reserved.
+        <div className="px-2 lg:px-8 m-0">
+          <p className="text-sm/6 text-neutral-200">
+            Follow Us
           </p>
+        </div>
+        <div className="px-2 lg:px-8 mt-4 flex justify-between flex-wrap">
+          <div className="w-full flex justify-around mb-4 lg:mb-0 lg:w-auto lg:gap-x-6">
+            {navigation.social.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className="text-neutral-100 hover:text-neutral-200"
+              >
+                <span className="sr-only">{item.name}</span>
+                <item.icon aria-hidden="true" className="size-6" />
+              </a>
+            ))}
+          </div>
+          <div className="flex gap-x-6 flex-wrap justify-center lg:justify-start">
+            <p className="text-sm/6 text-gray-600">
+              Privacy Policy
+            </p>
+            <p className="text-sm/6 text-gray-600">
+              Terms & Conditions
+            </p>
+            <p className="text-sm/6 text-gray-600">
+              &copy; Copyright © 2025 Laburen.com
+            </p>
+          </div>
         </div>
       </div>
     </footer>
