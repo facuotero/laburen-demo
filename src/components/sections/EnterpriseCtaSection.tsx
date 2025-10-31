@@ -22,13 +22,26 @@ export default function EnterpriseCtaSection() {
             Discover how AI can power your growth, simplify processes, and open new opportunities for success.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-4">
-            <button className="rounded-full border border-neutral-200 px-6 py-3 text-sm font-regular text-gray-700 shadow-sm hover:bg-gray-50 transition-colors">
-              Contact us
-            </button>
-            <button className="inline-flex items-center gap-2 border border-primary-800 rounded-full bg-primary-500 px-6 py-3 text-sm font-medium text-white shadow-sm hover:bg-green-600 transition-colors">
-               Start for Free
-            </button>
-          </div>
+              <button className="rounded-full bg-white border border-gray-300 px-6 py-3 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 transition-colors">
+                Talk to an Expert
+              </button>
+              <button className="inline-flex items-center gap-2 rounded-full border border-primary-500 bg-linear-to-b from-primary-500 to-[#006B3C] px-6 py-3 text-sm font-medium text-white shadow-sm hover:opacity-90 transition-opacity">
+                Explore Enterprise
+                <svg
+                  className="h-4 w-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>
