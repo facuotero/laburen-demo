@@ -6,7 +6,7 @@ import EnterpriseCtaSection from "@/components/sections/EnterpriseCtaSection"
 
 export default function HomePage() {
   return (
-    <main className="relative min-h-screen bg-neutral-950 text-white antialiased">
+    <main className="relative min-h-screen bg-white text-white antialiased">
       <HeroSection />
       <AgentsSection />
       <ContentSection />

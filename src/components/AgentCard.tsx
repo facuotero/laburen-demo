@@ -139,7 +139,7 @@ export function AgentCard({ agents, type = "employees" }: AgentCardProps) {
       </div>
       <div className="mt-2 grid grid-cols-2 gap-3 lg:grid-cols-3 lg:auto-rows-[120px]">
         {/* CARD PRINCIPAL (ancha) */}
-        <div className="col-span-2 relative flex items-center rounded-lg border border-[#93E2AC] bg-white/5 p-3 shadow-sm h-[105px] lg:p-6">
+        <div className="col-span-2 relative flex items-center rounded-lg border border-[#93E2AC] bg-white/5 p-3 shadow-sm h-[105px] lg:h-[120px] lg:p-6">
           <div>
             <h3 className="text-md font-medium text-neutral-900 lg:text-2xl">
               {titles[type].split("\n").map((line, index) => (
@@ -165,7 +165,7 @@ export function AgentCard({ agents, type = "employees" }: AgentCardProps) {
         {selectedAgents.map((agent) => (
           <div
             key={agent.name}
-            className="rounded-xl border border-neutral-200 bg-white/10 p-4 shadow-sm hover:bg-white/20 transition-colors"
+            className="rounded-xl border border-neutral-200 bg-white/10 p-2 shadow-sm hover:bg-white/20 transition-colors lg:p-4"
           >
             {/* Avatar */}
             <div className="flex items-center gap-3 w-full mb-2">

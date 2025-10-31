@@ -92,7 +92,7 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer className="p-4">
+    <footer className="p-2 lg:p-4">
       <div className="rounded-3xl bg-[#171717] bg-[url('/footer-img.png')] bg-no-repeat bg-position-[3.227px_-261.447px] bg-size-[100%_305.934%] h-auto py-8 px-4 lg:px-12 lg:py-16 lg:h-[455px]">
         <div className="flex w-full mb-12 flex-wrap px-2 lg:px-8">
           <div className="h-auto w-full mb-6 lg:mb-0 lg:h-[217px] lg:w-[247px]">
