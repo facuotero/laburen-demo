@@ -10,14 +10,14 @@ import { Button } from "../ui/button";
 
 export default function Faq({faqs, title, subtitle} : {faqs: {question: string; answer: string}[], title: string, subtitle: string}) {
   return (
-    <div className="bg-white">
+    <div>
       <div className="mx-auto max-w-7xl px-6 py-24 sm:pt-32 lg:px-8 lg:py-40">
         <div className="lg:grid lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-5">
-            <h2 className="text-4xl tracking-tight text-neutral-900 sm:text-5xl">
+            <h2 className="text-4xl tracking-tight text-neutral-900 sm:text-5xl dark:text-white">
               {title}
             </h2>
-            <p className="mt-4 text-neutral-600">
+            <p className="mt-4 text-neutral-600 dark:text-gray-400">
              {subtitle}
             </p>
            <Button className="p-5 bg-primary-100 mt-6 hover:bg-primary-200 text-primary-800 rounded-3xl border border-primary-500">

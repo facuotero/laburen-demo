@@ -17,17 +17,20 @@ const navigation = [
 export function Navbar() {
   const pathname = usePathname();
   // 🎨 Definí qué rutas usan qué color de texto
-  const isDarkSection = ["/",].includes(pathname); // ejemplo
-  const textColor = isDarkSection
+  const isHome = ["/",].includes(pathname); // ejemplo
+  const borderColor = isHome
+    ? "border-transparent"
+    : "border-neutral-200";
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const textColor = isHome
     ? "text-white hover:text-neutral-200"
     : "text-neutral-900 hover:text-neutral-700";
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header className="absolute inset-x-0 top-0 z-50 lg:px-6 lg:py-6">
       <nav
         aria-label="Global"
-        className="flex items-center justify-between px-6 py-6 bg-white/10 rounded-b-2xl lg:rounded-[99px] lg:px-12"
+        className={`flex items-center justify-between px-6 py-6 bg-white/10 rounded-b-2xl lg:rounded-[99px] lg:px-12 border ${borderColor}`}
       >
         {/* Logo */}
         <div className="flex lg:flex-1">

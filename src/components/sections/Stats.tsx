@@ -6,16 +6,16 @@ const stats = [
 
 export default function Stats() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:max-w-none">
           <div className="text-center">
-            <h2 className="text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+            <h2 className="text-2xl lg:text-3xl tracking-tight text-neutral-900">
              More than 10.000 companies in Latin America already
              <br />use Laburen.com to grow with Artificial Intelligence
             </h2>
           </div>
-          <dl className="mt-16 grid grid-cols-1 gap-6 text-center sm:grid-cols-2 lg:grid-cols-3">
+          <dl className="mt-16 grid grid-cols-1 gap-6 text-center md:grid-cols-3 lg:grid-cols-3">
             {stats.map((stat) => (
               <div key={stat.id} className="flex flex-col bg-white border border-green-200 rounded-2xl p-8 shadow-sm">
                 <dd className={`order-first text-5xl font-bold tracking-tight ${stat.color}`}>
