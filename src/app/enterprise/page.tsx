@@ -5,6 +5,7 @@ import Faq from "@/components/sections/Faq";
 import HeroEnterprise from "@/components/sections/HeroEnterpise";
 import Stats from "@/components/sections/Stats";
 import Usage from "@/components/sections/Usage";
+import LogoGrid from "@/components/LogoGrid";
 
 export default function EnterpriseSection() {
   const faqs = [
@@ -46,15 +47,38 @@ export default function EnterpriseSection() {
   ];
   const title = "Boost your business with Laburen Enterprise";
 
+  const LOGOS = [
+    { alt: "AWS", src: "/aws.svg" },
+    { alt: "OpenAI", src: "/openAI.svg" },
+    { alt: "Microsoft", src: "/office.svg" },
+    { alt: "Hubspot", src: "/hubspot.svg" },
+    { alt: "Salesforce", src: "/salesforce.svg" },
+    { alt: "Google Suite", src: "/gSuite.svg" },
+    { alt: "Odoo", src: "/odoo2.svg" },
+    { alt: "Anthropic", src: "/anthropic.svg" },
+  ];
+
   return (
-    <div className="relative overflow-hidden bg-[url('/enterprise_background.png')] bg-cover bg-no-repeat">
-      <HeroEnterprise />
-      <div className="bg-white py-10 lg:py-20 rounded-2xl shadow-xl mx-4 md:mx-8 -mb-16 relative z-10">
-        <Stats />
-        <Faq faqs={faqs} title={title} subtitle="" />
-        <Usage />
-      </div>
-      <EnterpriseCtaSection />
+<div className="relative overflow-hidden bg-[url('/enterprise_background.png')] bg-cover bg-no-repeat">
+  <HeroEnterprise />
+
+  {/* Desktop: LogoGrid fuera de la tarjeta */}
+  <div className="hidden lg:block">
+    <LogoGrid logos={LOGOS} />
+  </div>
+
+  <div className="py-8 lg:py-20 rounded-2xl shadow-xl -mb-16 z-10 relative bg-neutral-50 md:mx-8 lg:mx-8">
+    {/* Mobile/Tablet: LogoGrid comparte el div con Stats */}
+    <div className="lg:hidden">
+      <LogoGrid logos={LOGOS} />
     </div>
+
+    <Stats />
+    <Faq faqs={faqs} title={title} subtitle="" />
+    <Usage />
+  </div>
+
+  <EnterpriseCtaSection />
+</div>
   );
 }
