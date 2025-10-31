@@ -51,21 +51,21 @@ export default function PlansSection() {
   const subtitle =
     "Find answers to the most common questions about Laburen, our technology, and how it can help you transform the way you work.";
   return (
-    <div className="bg-white dark:bg-gray-900 relative overflow-hidden py-24 md:py-0 lg:py-0 px-4 sm:px-0">
+    <div className="bg-white dark:bg-gray-900 relative py-24 md:py-0 lg:py-16 sm:px-0">
       {/* Background decorative pattern */}
       <div className="relative isolate">
         <div className="mx-auto max-w-4xl mb-10 py-0 sm:py-16 lg:mt-16">
           <div className="mb-8 flex justify-center">
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#93E2AC] bg-white px-6 py-3 text-sm font-medium text-neutral-700 shadow-sm whitespace-nowrap">
+            <div className="inline-flex items-center gap-2 rounded-full border border-transparent shadow-primary-600  bg-white px-6 py-3 text-sm font-medium text-neutral-700 shadow-sm whitespace-nowrap">
               Precios basados en créditos&nbsp;
-              <span className="text-neutral-500">Más información →</span>
+              <span className="text-neutral-500 font-light">Más información →</span>
             </div>
           </div>
           <div className="text-center">
             <h1 className="text-primary text-xl md:text-4xl lg:text-5xl italic tracking-tight text-neutral-600  dark:text-white font-extralight">
               Plans and Pricing
             </h1>
-            <h1 className="text-primary-500 italic text-4xl md:text-6xl lg:text-7xl font-(--font-source-serif) tracking-tight">
+            <h1 className="text-primary-500 text-4xl md:text-6xl lg:text-7xl font-serif font-serif italic tracking-tight">
               Growth with AI
             </h1>
             <p className="mt-8 text-pretty text-sm md:text-lg lg:text-lg text-neutral-800 sm:text-xl max-w-3xl mx-auto dark:text-gray-400">

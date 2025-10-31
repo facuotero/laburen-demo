@@ -1,118 +1,28 @@
-import Image from "next/image";
-
 export default function HeroEnterprise() {
   return (
-    <div>
+    <div className="mb-8 md:mb-0 lg:mb-0">
       <div className="relative isolate">
-        <div className="mx-auto max-w-4xl sm:py-16 lg:mt-16">
+        <div className="mx-auto max-h-[368px] lg:max-h-[372px] py-24 lg:mt-16">
           <div className="text-center">
-            <h1 className="text-primary text-5xl italic tracking-tight text-neutral-600 sm:text-6xl mb-2 font-extralight">
+            <h1 className="text-primary text-2xl lg:text-4xl italic tracking-tight text-neutral-600 mb-2 font-extralight">
               Scale your business with
             </h1>
-            <h1 className="text-neutral-900 italic text-7xl tracking-tight sm:text-6xl">
+            <h1 className="text-neutral-900 italic text-4xl lg:text-7xl tracking-tight font-serif">
               AI Employees
             </h1>
-            <p className="mt-8 text-pretty text-lg text-gray-600 sm:text-xl max-w-3xl mx-auto">
-              Get started immediately for free. Upgrade for more credits, usage
-              <br />
-              and collaboration.
+            <p className="max-w mx-auto mt-8 text-base md:text- lg:text-lg text-neutral-800">
+              {
+                "Integrate smart assistants that work 24/7 in just\nminutes, with no technical knowledge required.\nSave time, reduce costs, and boost your team’s\nproductivity."
+              }
             </p>
           </div>
           <div className="mt-10 flex items-center justify-center gap-x-4">
             <button className="rounded-full bg-white border border-gray-300 px-6 py-3 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 transition-colors">
-              Talk to an Expert
+              View Plans
             </button>
             <button className="inline-flex items-center gap-2 rounded-full bg-neutral-900 px-6 py-3 text-sm font-medium text-white shadow-sm hover:bg-green-600 transition-colors">
-              Explore Enterprise
-              <svg
-                className="h-4 w-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                />
-              </svg>
+              Get in touch
             </button>
-          </div>
-        </div>
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 space-y-8">
-          <div className="p-6 sm:p-10">
-            <div className="mx-auto grid grid-cols-2 lg:grid-cols-4 items-center max-w-[370px] max-h-[104px] md:max-w-[600px] md:max-h-9 lg:max-w-[600px] lg:max-h-9">
-              <div className="relative w-10 h-7 md:w-22 md:h-6 lg:w-22 lg:h-6">
-                <Image
-                  alt="AWS"
-                  src="/aws.svg"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-              <div className="relative w-10 h-7 md:w-22 md:h-6 lg:w-22 lg:h-6">
-                <Image
-                  alt="OpenAI"
-                  src="/openAI.svg"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-              <div className="relative w-10 h-7 md:w-22 md:h-6 lg:w-22 lg:h-6">
-                <Image
-                  alt="Microsoft"
-                  src="/office.svg"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-              <div className="relative w-10 h-7 md:w-22 md:h-6 lg:w-22 lg:h-6">
-                <Image
-                  alt="Hubspot"
-                  src="/hubspot.svg"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div className="p-6 sm:p-10">
-            <div className="mx-auto grid grid-cols-2 lg:grid-cols-4 items-center gap-x-8 gap-y-12 sm:gap-x-10 sm:gap-y-14 max-w-[370px] max-h-[104px] md:max-w-[600px] md:max-h-9 lg:max-w-[600px] lg:max-h-9">
-              <div className="relative w-10 h-7 md:w-22 md:h-6 lg:w-22 lg:h-6">
-                <Image
-                  alt="Salesforce"
-                  src="/salesforce.svg"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-              <div className="relative w-10 h-7 md:w-22 md:h-6 lg:w-22 lg:h-6">
-                <Image
-                  alt="Google Suite"
-                  src="/gSuite.svg"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-              <div className="relative w-10 h-7 md:w-22 md:h-6 lg:w-22 lg:h-6">
-                <Image
-                  alt="Odoo"
-                  src="/odoo2.svg"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-              <div className="relative w-10 h-7 md:w-22 md:h-6 lg:w-22 lg:h-6">
-                <Image
-                  alt="Anthropic"
-                  src="/anthropic.svg"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            </div>
           </div>
         </div>
       </div>
