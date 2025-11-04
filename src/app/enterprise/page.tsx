@@ -4,6 +4,7 @@ import EnterpriseCtaSection from "@/components/sections/EnterpriseCtaSection";
 import Faq from "@/components/sections/Faq";
 import HeroEnterprise from "@/components/sections/HeroEnterpise";
 import Stats from "@/components/sections/Stats";
+import GlobalAlliancesSection from "@/components/sections/GlobalAlliancesSection";
 import Usage from "@/components/sections/Usage";
 import LogoGrid from "@/components/LogoGrid";
 
@@ -74,6 +75,7 @@ export default function EnterpriseSection() {
     </div>
 
     <Stats />
+    <GlobalAlliancesSection />
     <Faq faqs={faqs} title={title} subtitle="" />
     <Usage />
   </div>
