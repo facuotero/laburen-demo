@@ -89,7 +89,7 @@ export function Navbar() {
         <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full max-w-sm bg-neutral-900 p-6">
           <div className="flex items-center justify-between">
             <Image
-              src="/images/logo.svg"
+              src="/logo_green.svg"
               alt="Laburen"
               width={36}
               height={36}
