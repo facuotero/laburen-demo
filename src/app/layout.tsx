@@ -35,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="white">
       <body
-        className={`${inter.variable} ${sourceSerif.variable} font-sans antialiased text-white`}
+        className={`${inter.variable} ${sourceSerif.variable} font-sans antialiased text-white bg-neutral-50`}
       >
         <Navbar />
         <main>
