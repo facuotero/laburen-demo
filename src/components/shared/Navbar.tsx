@@ -16,7 +16,6 @@ const navigation = [
 
 export function Navbar() {
   const pathname = usePathname();
-  // 🎨 Definí qué rutas usan qué color de texto
   const isHome = ["/",].includes(pathname); // ejemplo
   const borderColor = isHome
     ? "border border-transparent"
@@ -71,10 +70,10 @@ export function Navbar() {
 
         {/* Actions */}
         <div className="hidden lg:flex lg:flex-1 lg:justify-end gap-4">
-          <button className="rounded-full bg-white text-gray-900 px-5 py-2 font-medium text-sm hover:bg-gray-100">
+          <button className="rounded-full bg-neutral-50 text-neutral-900 px-5 py-2 font-medium text-sm hover:bg-neutral-100">
             Talk to sales
           </button>
-          <button className="rounded-full bg-primary-600 text-white px-5 py-2 font-medium text-sm hover:bg-primary-700">
+          <button className="rounded-full bg-neutral-800 text-neutral-50 border border-neutral-700 px-5 py-2 font-medium text-sm hover:bg-primary-700">
             Start Creating
           </button>
         </div>

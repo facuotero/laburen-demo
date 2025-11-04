@@ -186,13 +186,13 @@ export default function Footer() {
             ))}
           </div>
           <div className="flex gap-x-6 flex-wrap justify-center lg:justify-start">
-            <p className="text-sm/6 text-gray-600">
+            <a className="text-sm/6 text-neutral-600 hover:text-neutral-400 cursor-pointer">
               Privacy Policy
-            </p>
-            <p className="text-sm/6 text-gray-600">
+            </a>
+            <a className="text-sm/6 text-neutral-600 hover:text-neutral-400 cursor-pointer">
               Terms & Conditions
-            </p>
-            <p className="text-sm/6 text-gray-600">
+            </a>
+            <p className="text-sm/6 text-neutral-600">
               &copy; Copyright © 2025 Laburen.com
             </p>
           </div>

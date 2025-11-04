@@ -1,14 +1,15 @@
 // import { Button } from "@/components/ui/button"
 import { AgentInput } from "@/components/AgentInput";
+import { HeadsetIcon, ClipboardAddIcon, CalendarIcon, ProductsIcon, TextIcon, QuestionCircleIcon } from "../../../public/icons";
 
 export function HeroSection() {
   return (
-    <section className="relative isolate overflow-hidden bg-linear-to-b from-[#0A0A0A] via-neutral-900 to-neutral-950 text-white pt-32 pb-10">
+    <section className="relative isolate overflow-hidden bg-linear-to-b from-[#0A0A0A] via-neutral-900 to-neutral-950 text-neutral-50 pt-32 pb-10">
       {/* Background glow */}
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,rgba(76,199,34,0.15),transparent_70%)]" />
 
       {/* Content */}
-      <div className="mx-auto max-w-4xl text-center px-6 lg:px-8">
+      <div className="mx-auto max-w-4xl text-center px-6 lg:px-8 lg:mt-20">
         <div className="text-center space-y-4">
           {/* Badge con estrellas */}
           <div className="inline-flex items-center gap-2 rounded-full border border-neutral-700 bg-neutral-800/60 px-4 py-1.5 text-sm text-gray-300">
@@ -21,7 +22,7 @@ export function HeroSection() {
             <span className="block text-3xl sm:text-4xl italic font-light">
               Create your next
             </span>
-            <span className="block text-5xl sm:text-6xl font-(--font-source-serif)">
+            <span className="block text-5xl sm:text-6xl font-serif ">
               AI Agent
             </span>
           </h1>
@@ -36,27 +37,27 @@ export function HeroSection() {
           <AgentInput />
           <div className="flex flex-wrap justify-center gap-3 max-w-2xl mx-auto mt-4">
             <span className="px-4 py-2 rounded-full bg-neutral-800/40 border border-neutral-700/50 text-sm text-gray-300 flex items-center gap-2">
-              <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
+              <ClipboardAddIcon className="w-4 h-4" color="#00BC7D" />
               Analyze data & answer questions
             </span>
             <span className="px-4 py-2 rounded-full bg-neutral-800/40 border border-neutral-700/50 text-sm text-gray-300 flex items-center gap-2">
-              <span className="w-2 h-2 bg-yellow-400 rounded-full"></span>
+              <CalendarIcon className="w-4 h-4" color="#FDC700" />
               Automate repetitive tasks
             </span>
             <span className="px-4 py-2 rounded-full bg-neutral-800/40 border border-neutral-700/50 text-sm text-gray-300 flex items-center gap-2">
-              <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
+              <QuestionCircleIcon color="#00BCFF" />
               Handle FAQs
             </span>
             <span className="px-4 py-2 rounded-full bg-neutral-800/40 border border-neutral-700/50 text-sm text-gray-300 flex items-center gap-2">
-              <span className="w-2 h-2 bg-orange-400 rounded-full"></span>
+              <HeadsetIcon className="h-4 w-4" color="#FF8904" />
               Provide 24/7 support
             </span>
             <span className="px-4 py-2 rounded-full bg-neutral-800/40 border border-neutral-700/50 text-sm text-gray-300 flex items-center gap-2">
-              <span className="w-2 h-2 bg-red-400 rounded-full"></span>
+              <ProductsIcon color="#FF6467" />
               Product recommendations
             </span>
             <span className="px-4 py-2 rounded-full bg-neutral-800/40 border border-neutral-700/50 text-sm text-gray-300 flex items-center gap-2">
-              <span className="w-2 h-2 bg-purple-400 rounded-full"></span>
+              <TextIcon color="#A684FF" />
               Custom responses
             </span>
           </div>
