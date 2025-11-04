@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
@@ -25,8 +25,23 @@ export function Navbar() {
     ? "text-white hover:text-neutral-200"
     : "text-neutral-900 hover:text-neutral-700";
 
+  const [isSticky, setIsSticky] = useState(false);
+
+useEffect(() => {
+  const navbarHeight = document.querySelector("header")?.offsetHeight || 0;
+
+  const handleScroll = () => {
+    setIsSticky(window.scrollY > navbarHeight);
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
+
   return (
-    <header className="absolute inset-x-0 top-0 z-50 lg:px-6 lg:py-6">
+    <header
+      className={`${isSticky ? "fixed top-0 opacity-100 translate-y-0" : "absolute top-0 opacity-100 translate-y-0"} inset-x-0 z-50 lg:px-6 lg:py-6 bg-transparent transition-all duration-700 ease-in-out`}
+    >
       <nav
         aria-label="Global"
         className={`flex items-center justify-between px-6 py-6 bg-white/10 rounded-b-2xl lg:rounded-[99px] lg:px-12 ${borderColor}`}
