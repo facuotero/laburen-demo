@@ -51,7 +51,7 @@ export default function PlansSection() {
   const subtitle =
     "Find answers to the most common questions about Laburen, our technology, and how it can help you transform the way you work.";
   return (
-    <div className="relative py-24 md:py-0 sm:px-0">
+    <div className="relative py-24 md:py-12 lg:py-24 sm:px-0">
       {/* Background decorative pattern */}
       <div className="relative isolate">
         <div className="mx-auto max-w-4xl mb-10 py-0 sm:py-16">

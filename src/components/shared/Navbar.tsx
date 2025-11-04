@@ -16,7 +16,6 @@ const navigation = [
 
 export function Navbar() {
   const pathname = usePathname();
-  // 🎨 Definí qué rutas usan qué color de texto
   const isHome = ["/",].includes(pathname); // ejemplo
   const borderColor = isHome
     ? "border border-transparent"
@@ -27,10 +26,10 @@ export function Navbar() {
     : "text-neutral-900 hover:text-neutral-700";
 
   return (
-    <header className="sticky inset-x-0 top-0 z-50 lg:px-6 lg:py-6">
+    <header className="absolute inset-x-0 top-0 z-50 lg:px-6 lg:py-6">
       <nav
         aria-label="Global"
-        className={`flex items-center justify-between px-6 py-6 bg-neutral-50 rounded-b-2xl lg:rounded-[99px] lg:px-12 ${borderColor}`}
+        className={`flex items-center justify-between px-6 py-6 bg-white/10 rounded-b-2xl lg:rounded-[99px] lg:px-12 ${borderColor}`}
       >
         {/* Logo */}
         <div className="flex lg:flex-1">
@@ -71,10 +70,10 @@ export function Navbar() {
 
         {/* Actions */}
         <div className="hidden lg:flex lg:flex-1 lg:justify-end gap-4">
-          <button className="rounded-full bg-white text-gray-900 px-5 py-2 font-medium text-sm hover:bg-gray-100">
+          <button className="rounded-full bg-neutral-50 text-neutral-900 px-5 py-2 font-medium text-sm hover:bg-neutral-100">
             Talk to sales
           </button>
-          <button className="rounded-full bg-primary-600 text-white px-5 py-2 font-medium text-sm hover:bg-primary-700">
+          <button className="rounded-full bg-neutral-800 text-neutral-50 border border-neutral-700 px-5 py-2 font-medium text-sm hover:bg-primary-700">
             Start Creating
           </button>
         </div>

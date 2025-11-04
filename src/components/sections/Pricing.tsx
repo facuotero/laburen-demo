@@ -191,7 +191,7 @@ export default function Pricing() {
       </div>
 
       {/* Enterprise Plan */}
-      <div className="mx-auto mt-8 max-w-[370px] aspect-370/644 md:max-w-[664px] md:aspect-664/347 lg:max-w-[1014px] lg:max-h-[347px] lg:aspect-1014/347 relative">
+      <div className="mx-auto mt-8 max-w-[370px] aspect-370/644 md:max-w-[664px] md:aspect-664/347 lg:max-w-[1014px] lg:max-h-[410px] lg:aspect-1014/410 relative">
         <div className="flex flex-col md:flex-row lg:flex-row rounded-2xl bg-linear-to-r p-4 md:p-6 border border-primary-500 relative overflow-hidden">
           {/* Contenido principal a la izquierda */}
           <div className="flex-1 pr-8 md:pr-0">
@@ -231,7 +231,7 @@ export default function Pricing() {
           </div>
           {/* Imagen Nora - alineada a la derecha y al fondo */}
           <div className="md:absolute lg:absolute right-0 bottom-0">
-            <div className="relative w-[256px] h-[280px] md:w-[310px] md:h-[338px] lg:w-[429px] lg:h-[347px]">
+            <div className="relative w-[256px] h-[280px] md:w-[310px] md:h-[338px] lg:w-[407px] lg:h-[330px]">
               <Image
                 src="/avatars/Laburante_consu.svg"
                 alt="Nora - Customer success"
