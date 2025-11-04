@@ -132,7 +132,7 @@ export default function Pricing() {
           </button>
         </div>
         {/* Growth Plan */}
-        <div className="flex flex-col justify-between rounded-2xl max-w-[370px] aspect-370/491 md:max-w-[664px] md:aspect-664/347 lg:max-w-[327px] lg:aspect-327/580 p-8 shadow-lg border border-gray-200">
+        <div className="flex flex-col justify-between rounded-2xl max-w-[370px] md:max-w-full md:col-span-2 lg:max-w-[327px] lg:col-span-1 aspect-370/491 md:aspect-auto lg:aspect-327/580 p-8 shadow-lg border border-gray-200">
           <div>
             <div className="flex items-center justify-between">
               <h3 className="text-lg font-medium text-neutral-900">Growth</h3>
