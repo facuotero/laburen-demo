@@ -34,11 +34,11 @@ export default function Faq({faqs, title, subtitle} : {faqs: {question: string; 
                     className="py-6 first:pt-0 last:pb-0"
                   >
                     <dt>
-                      <DisclosureButton className="group flex w-full items-start justify-between text-left">
+                      <DisclosureButton className="group flex w-full items-center justify-between text-left gap-2">
                         <span className="font-medium text-lg text-neutral-900">{faq.question}</span>
-                        <span className="ml-6 flex h-7 items-center">
-                          <PlusIcon aria-hidden="true" className="size-6 group-data-[open]:hidden"/>
-                          <MinusIcon aria-hidden="true" className="size-6 group-[:not([data-open])]:hidden"/>
+                        <span className="ml-4 flex h-6 items-center">
+                          <PlusIcon aria-hidden="true" className="size-5 text-neutral-700 group-data-[open]:hidden transition-transform duration-200"/>
+                          <MinusIcon aria-hidden="true" className="size-5 text-neutral-700 group-[:not([data-open])]:hidden transition-transform duration-200"/>
                         </span>
                       </DisclosureButton>
                     </dt>

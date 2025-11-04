@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const useCases = [
   {
     id: 1,
@@ -52,12 +50,11 @@ export default function UsageSection() {
             >
               {/* Contenedor con padding interno */}
               <div className="p-4">
-                <div className="relative w-full h-[341px] rounded-lg overflow-hidden">
-                  <Image
+                <div className="relative w-full h-[240px] rounded-lg overflow-hidden">
+                  <img
                     alt={useCase.title}
                     src={useCase.imageUrl}
-                    fill
-                    className="rounded-lg"
+                    className="rounded-lg  w-full h-full"
                   />
                 </div>
               </div>
