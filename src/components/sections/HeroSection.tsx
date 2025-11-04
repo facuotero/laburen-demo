@@ -1,6 +1,14 @@
 // import { Button } from "@/components/ui/button"
 import { AgentInput } from "@/components/AgentInput";
-import { HeadsetIcon, ClipboardAddIcon, CalendarIcon, ProductsIcon, TextIcon, QuestionCircleIcon } from "../../../public/icons";
+import {
+  HeadsetIcon,
+  ClipboardAddIcon,
+  CalendarIcon,
+  ProductsIcon,
+  TextIcon,
+  QuestionCircleIcon,
+} from "../../../public/icons";
+import { CarouselSpacing } from "../Carousel";
 
 export function HeroSection() {
   return (
@@ -64,26 +72,51 @@ export function HeroSection() {
         </div>
 
         <p className="mt-16 text-2xl">
-          Your next hire isn’t human. These companies already know it...
+          {"Your next hire isn't human. These companies already know it..."}
         </p>
+      </div>
 
-        <div className="mt-8 flex justify-center gap-10 opacity-70">
-          <img src="logo_nvidia.svg" alt="NVIDIA" className="h-17 w-108" />
-          <img
-            src="logo_microsoft.svg"
-            alt="Microsoft"
-            className="h-17 w-108"
-          />
-          <img src="logo_vias3d.svg" alt="VIAS3D" className="h-17 w-108" />
-          <img
-            src="logo_taraborelli.svg"
-            alt="Taraborelli"
-            className="h-17 w-108"
-          />
-          <img src="logo_portsaid.svg" alt="Portsaid" className="h-17 w-108" />
-          <img src="logo_gfitness.svg" alt="Gfitness" className="h-17 w-108" />
-          <img src="logo_granger.svg" alt="Granger" className="h-17 w-108" />
-        </div>
+      {/* Logos carousel - Full width */}
+      <div className="mt-8 w-full px-6 lg:px-8">
+        <CarouselSpacing
+          images={[
+            {
+              src: "logo_gfitness.svg",
+              alt: "Gfitness",
+              className: "h-17 w-108",
+            },
+            {
+              src: "logo_granger.svg",
+              alt: "Granger",
+              className: "h-17 w-108",
+            },
+            {
+              src: "logo_nvidia.svg",
+              alt: "NVIDIA",
+              className: "h-17 w-108",
+            },
+            {
+              src: "logo_microsoft.svg",
+              alt: "Microsoft",
+              className: "h-17 w-108",
+            },
+            {
+              src: "logo_vias3d.svg",
+              alt: "VIAS3D",
+              className: "h-17 w-108",
+            },
+            {
+              src: "logo_taraborelli.svg",
+              alt: "Taraborelli",
+              className: "h-17 w-108",
+            },
+            {
+              src: "logo_portsaid.svg",
+              alt: "Portsaid",
+              className: "h-17 w-108",
+            },
+          ]}
+        />
       </div>
     </section>
   );
