@@ -54,7 +54,7 @@ const testimonials = [
 export default function Testimonials() {
   return (
     <div className="bg-white">
-      <div className="bg-white w-11/12 mb-4 lg:max-w-7xl m-auto bg-[url('/testimonials-bg.png')] bg-no-repeat bg-position-[0_0] bg-size-[100%_100%] rounded-3xl border border-neutral-200 shadow-lg py-24 sm:py-32 relative overflow-hidden">
+      <div className="bg-white w-11/12 mb-4 lg:max-w-7xl m-auto bg-[url('/testimonials-background.svg')] bg-no-repeat bg-position-[0_0] bg-size-[100%_100%] rounded-3xl border border-neutral-200 shadow-lg py-24 sm:py-32 relative overflow-hidden">
         {/* Background decorative elements */}
         <div className="absolute inset-0 -z-10">
           <svg
