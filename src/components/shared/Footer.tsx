@@ -1,33 +1,35 @@
+import Image from 'next/image'
+
 const navigation = {
-  website: [
-    { name: 'Home', href: '#' },
-    { name: 'Plans', href: '#' },
-    { name: 'Contact', href: '#' },
-    { name: 'Blog', href: '#' },
-    { name: 'Clients', href: '#' },
-    { name: 'Partners', href: '#' },
+  solutions: [
+    { name: "Home", href: "#" },
+    { name: "Plans", href: "#" },
+    { name: "Contact", href: "#" },
+    { name: "Blog", href: "#" },
+    { name: "Clients", href: "#" },
+    { name: "Partners", href: "#" },
   ],
-  resources: [
-    { name: 'AI Employees', href: '#' },
-    { name: 'Sales', href: '#' },
-    { name: 'Customer Support', href: '#' },
-    { name: 'Administration', href: '#' },
-    { name: 'Wholesale Management', href: '#' },
-    { name: 'Integrations', href: '#' },
+  support: [
+    { name: "AI Employees", href: "#" },
+    { name: "Sales", href: "#" },
+    { name: "Customer Support", href: "#" },
+    { name: "Administration", href: "#" },
+    { name: "Wholesale Management", href: "#" },
+    { name: "Integrations", href: "#" },
   ],
-  industries: [
-    { name: 'Ecommerce', href: '#' },
-    { name: 'Healthcare', href: '#' },
-    { name: 'Manufacturing', href: '#' },
-    { name: 'Real State', href: '#' },
-    { name: 'Logistics', href: '#' },
-    { name: 'Software', href: '#' },
+  company: [
+    { name: "Ecommerce", href: "#" },
+    { name: "Healthcare", href: "#" },
+    { name: "Manufacturing", href: "#" },
+    { name: "Real State", href: "#" },
+    { name: "Logistics", href: "#" },
+    { name: "Software", href: "#" },
   ],
   social: [
     {
-      name: 'Facebook',
-      href: '#',
-      icon: (props: React.SVGProps<SVGSVGElement>) => (
+      name: "Facebook",
+      href: "#",
+      icon: (props:React.SVGProps<SVGSVGElement>) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
             fillRule="evenodd"
@@ -38,9 +40,9 @@ const navigation = {
       ),
     },
     {
-      name: 'Instagram',
-      href: '#',
-      icon: (props: React.SVGProps<SVGSVGElement>) => (
+      name: "Instagram",
+      href: "#",
+      icon: (props:React.SVGProps<SVGSVGElement>) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
             fillRule="evenodd"
@@ -51,18 +53,18 @@ const navigation = {
       ),
     },
     {
-      name: 'X',
-      href: '#',
-      icon: (props: React.SVGProps<SVGSVGElement>) => (
+      name: "X",
+      href: "#",
+      icon: (props:React.SVGProps<SVGSVGElement>) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path d="M13.6823 10.6218L20.2391 3H18.6854L12.9921 9.61788L8.44486 3H3.2002L10.0765 13.0074L3.2002 21H4.75404L10.7663 14.0113L15.5685 21H20.8131L13.6819 10.6218H13.6823ZM11.5541 13.0956L10.8574 12.0991L5.31391 4.16971H7.70053L12.1742 10.5689L12.8709 11.5655L18.6861 19.8835H16.2995L11.5541 13.096V13.0956Z" />
         </svg>
       ),
     },
     {
-      name: 'GitHub',
-      href: '#',
-      icon: (props: React.SVGProps<SVGSVGElement>) => (
+      name: "GitHub",
+      href: "#",
+      icon: (props:React.SVGProps<SVGSVGElement>) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
             fillRule="evenodd"
@@ -73,18 +75,9 @@ const navigation = {
       ),
     },
     {
-      name: 'LinkedIn',
-      href: '#',
-      icon: (props: React.SVGProps<SVGSVGElement>) => (
-        <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-        </svg>
-      ),
-    },
-    {
-      name: 'YouTube',
-      href: '#',
-      icon: (props: React.SVGProps<SVGSVGElement>) => (
+      name: "YouTube",
+      href: "#",
+      icon: (props:React.SVGProps<SVGSVGElement>) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
             fillRule="evenodd"
@@ -94,121 +87,117 @@ const navigation = {
         </svg>
       ),
     },
-    {
-      name: 'WhatsApp',
-      href: '#',
-      icon: (props: React.SVGProps<SVGSVGElement>) => (
-        <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.488"/>
-        </svg>
-      ),
-    },
   ],
-}
+};
 
 export default function Footer() {
   return (
-    <footer className="bg-neutral-900 rounded-t-3xl mx-4 mb-4">
-      <div className="mx-auto max-w-7xl px-8 pb-8 pt-16 lg:px-12 lg:pt-20">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 lg:gap-12">
-          {/* Logo and Description */}
-          <div className="space-y-6">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center">
-                <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M13 3L4 14h7v7l9-11h-7V3z"/>
-                </svg>
-              </div>
-              <span className="text-green-500 text-xl font-bold">LABUREN.COM</span>
-            </div>
-            <p className="text-gray-400 text-sm leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+    <footer className="p-2 lg:p-4">
+      <div className="rounded-3xl bg-neutral-900 bg-[url('/footer-img.png')] bg-no-repeat bg-position-[3.227px_-261.447px] bg-size-[100%_305.934%] h-auto py-8 px-4 lg:px-12 lg:py-16 lg:h-[455px]">
+        <div className="flex w-full mb-12 flex-wrap px-2 lg:px-8">
+          <div className="h-auto w-full mb-6 lg:mb-0 lg:h-[217px] lg:w-[247px]">
+            <Image
+              alt="Company name"
+              src="/logo_green.svg"
+              width={192}
+              height={40}
+              className="h-9 w-auto mb-4"
+            />
+            <Image
+              alt="Company name"
+              src="/logo_green.svg"
+              width={192}
+              height={40}
+              className="hidden h-9 w-auto dark:block"
+            />
+            <p className="text-balance text-sm/6 text-neutral-200 dark:text-gray-400">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.
             </p>
-            
-            {/* Social Media */}
-            <div className="space-y-4">
-              <h4 className="text-white font-medium">¡Follow Us!</h4>
-              <div className="flex gap-4">
-                {navigation.social.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="w-10 h-10 bg-neutral-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:bg-neutral-700 transition-colors"
-                  >
-                    <span className="sr-only">{item.name}</span>
-                    <item.icon className="w-5 h-5" />
-                  </a>
-                ))}
-              </div>
-            </div>
           </div>
-
-          {/* Website Links */}
-          <div>
-            <h3 className="text-white font-semibold mb-6">WEBSITE</h3>
-            <ul className="space-y-4">
-              {navigation.website.map((item) => (
+          <div className="w-1/3 lg:w-[323px] h-[217px] lg:pl-40">
+            <h3 className="text-sm/6 font-semibold text-neutral-200 mb-4">
+              Website
+            </h3>
+            <ul role="list" className="space-y-1">
+              {navigation.solutions.map((item) => (
                 <li key={item.name}>
                   <a
                     href={item.href}
-                    className="text-gray-400 hover:text-white transition-colors flex items-center gap-2"
+                    className="text-sm/6 text-neutral-100 hover:text-neutral-400"
                   >
-                    <span className="text-green-500">+</span>
-                    {item.name}
+                    + {item.name}
                   </a>
                 </li>
               ))}
             </ul>
           </div>
-
-          {/* Resources Links */}
-          <div>
-            <h3 className="text-white font-semibold mb-6">RESOURCES</h3>
-            <ul className="space-y-4">
-              {navigation.resources.map((item) => (
+          <div className="w-1/3 lg:w-[323px] h-[217px] lg:pl-40">
+            <h3 className="text-sm/6 font-semibold text-neutral-200 mb-4">
+              Resources
+            </h3>
+            <ul role="list" className="space-y-1">
+              {navigation.support.map((item) => (
                 <li key={item.name}>
                   <a
                     href={item.href}
-                    className="text-gray-400 hover:text-white transition-colors flex items-center gap-2"
+                    className="text-sm/6 text-neutral-100 hover:text-neutral-400"
                   >
-                    <span className="text-green-500">+</span>
-                    {item.name}
+                    + {item.name}
                   </a>
                 </li>
               ))}
             </ul>
           </div>
-
-          {/* Industries Links */}
-          <div>
-            <h3 className="text-white font-semibold mb-6">INDUSTRIES</h3>
-            <ul className="space-y-4">
-              {navigation.industries.map((item) => (
+          <div className="w-1/3 lg:w-[323px] h-[217px] lg:pl-40">
+            <h3 className="text-sm/6 font-semibold text-neutral-200 mb-4">
+              Industries
+            </h3>
+            <ul role="list" className="space-y-1">
+              {navigation.company.map((item) => (
                 <li key={item.name}>
                   <a
                     href={item.href}
-                    className="text-gray-400 hover:text-white transition-colors flex items-center gap-2"
+                    className="text-sm/6 text-neutral-100 hover:text-neutral-400"
                   >
-                    <span className="text-green-500">+</span>
-                    {item.name}
+                    + {item.name}
                   </a>
                 </li>
               ))}
             </ul>
           </div>
         </div>
-
-        {/* Bottom Section */}
-        <div className="mt-16 pt-8 border-t border-neutral-800 flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="flex flex-wrap justify-center md:justify-start gap-6 text-sm text-gray-400">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms & Conditions</a>
-          </div>
-          <p className="text-sm text-gray-400">
-            Copyright © 2025 Laburen.com
+        <div className="px-2 lg:px-8 m-0">
+          <p className="text-sm/6 text-neutral-200">
+            Follow Us
           </p>
+        </div>
+        <div className="px-2 lg:px-8 mt-4 flex justify-between flex-wrap">
+          <div className="w-full flex justify-around mb-4 lg:mb-0 lg:w-auto lg:gap-x-6">
+            {navigation.social.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className="text-neutral-100 hover:text-neutral-200"
+              >
+                <span className="sr-only">{item.name}</span>
+                <item.icon aria-hidden="true" className="size-6" />
+              </a>
+            ))}
+          </div>
+          <div className="flex gap-x-6 flex-wrap justify-center lg:justify-start">
+            <a className="text-sm/6 text-neutral-600 hover:text-neutral-400 cursor-pointer">
+              Privacy Policy
+            </a>
+            <a className="text-sm/6 text-neutral-600 hover:text-neutral-400 cursor-pointer">
+              Terms & Conditions
+            </a>
+            <p className="text-sm/6 text-neutral-600">
+              &copy; Copyright © 2025 Laburen.com
+            </p>
+          </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }

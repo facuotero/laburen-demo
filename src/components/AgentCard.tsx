@@ -51,21 +51,21 @@ const agentGroups = {
     {
       name: "Kommo",
       role: "Soporte y Post-Venta",
-      avatar: "/avatars/avatar_wt_consu.svg",
+      avatar: "/kommo.svg",
       description:
         "Encargada de asesorar el cliente en todo el proceso despues de la compra",
     },
     {
       name: "Cal.com",
       role: "Soporte y Post-Venta",
-      avatar: "/avatars/avatar_wt_consu.svg",
+      avatar: "/cal.svg",
       description:
         "Encargada de asesorar el cliente en todo el proceso despues de la compra",
     },
     {
       name: "Google Calendar",
       role: "Organization",
-      avatar: "/avatars/avatar_wt_consu.svg",
+      avatar: "/calendar.svg",
       description: "Automatically schedules and organizes your meetings.",
     },
   ],
@@ -108,7 +108,7 @@ export function AgentCard({ agents, type = "employees" }: AgentCardProps) {
 
   const titles = {
     employees: "Your ideal employee\nfor every task.",
-    platforms: "Let AI employees use your\nfavorite tools seamlessly.",
+    platforms: "Connect with\nplatforms seamlessly ",
     integrations: "Your favorite business apps,\nready to scale with you.",
   };
 
@@ -156,7 +156,7 @@ export function AgentCard({ agents, type = "employees" }: AgentCardProps) {
               alt="Agents illustration"
               width={282}
               height={165}
-              className="object-contain absolute right-0 bottom-0 w-50 h-30 sm:w-40 sm:h-24 md:w-48 md:h-28 lg:w-[282px] lg:h-[165px]"
+              className="object-contain absolute right-0 bottom-0 w-44 h-[107px] sm:w-40 sm:h-24 md:w-48 md:h-28 lg:w-[282px] lg:h-[165px]"
             />
           )}
         </div>

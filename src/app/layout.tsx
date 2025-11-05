@@ -3,7 +3,7 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import localFont from "next/font/local"
 import { Navbar } from "@/components/shared/Navbar"
-import Footer2 from "@/components/shared/Footer2"
+import Footer from "@/components/shared/Footer"
 
 // 🔤 Fuente principal (Inter)
 const inter = Inter({
@@ -41,7 +41,7 @@ export default function RootLayout({
         <main>
           {children}
         </main>
-        <Footer2 />
+        <Footer />
       </body>
     </html>
   )
