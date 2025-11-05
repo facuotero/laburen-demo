@@ -44,7 +44,7 @@ useEffect(() => {
     >
       <nav
         aria-label="Global"
-        className={`flex items-center justify-between px-6 py-6 bg-white/10 rounded-b-2xl lg:rounded-[99px] lg:px-12 ${borderColor}`}
+        className={`flex items-center justify-between px-6 py-6 bg-white/10 backdrop-blur-xl rounded-b-2xl lg:rounded-[99px] lg:px-12 ${borderColor}`}
       >
         {/* Logo */}
         <div className="flex lg:flex-1">
