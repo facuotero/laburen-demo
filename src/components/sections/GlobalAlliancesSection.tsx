@@ -51,7 +51,7 @@ export default function GlobalAlliancesSection() {
             </p>
 
             <div>
-              <button className="inline-flex items-center gap-1.5 rounded-full bg-[#262626] px-5 py-2.5 text-sm font-medium text-white shadow-md hover:bg-[#1f1f1f] transition-colors">
+              <button className="inline-flex items-center gap-1.5 rounded-full bg-neutral-800 px-5 py-2.5 text-sm font-medium text-white shadow-md hover:bg-[#1f1f1f] transition-colors">
                 Discover more
                 <ArrowUpRight className="h-3.5 w-3.5" />
               </button>
