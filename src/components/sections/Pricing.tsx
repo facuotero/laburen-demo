@@ -18,10 +18,10 @@ import {
 
 export default function Pricing() {
   return (
-    <div className="mx-auto w-full max-w-[370px] aspect-370/1658 md:max-w-[664px] md:aspect-664/854 lg:max-w-[1014px] lg:aspect-1014/814 mb-8">
+    <div className="mx-auto w-full max-w-[370px] md:max-w-[664px] lg:max-w-[1014px] mb-8">
       <div className="mx-auto w-full max-w-[1014px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch justify-items-stretch [&>*]:w-full">
         {/* Pro Plan */}
-        <div className="flex flex-col  justify-between rounded-2xl max-w-[370px] aspect-370/491 md:max-w-[324px] md:aspect-324/491 lg:max-w-[327px] lg:aspect-327/580 p-8 shadow-lg border border-gray-200">
+        <div className="flex flex-col justify-between rounded-2xl w-full min-h-[500px] p-8 shadow-lg border border-gray-200">
           <div>
             <div className="flex items-center">
               <h3 className="text-xl font-medium text-neutral-900">Pro</h3>
@@ -75,7 +75,7 @@ export default function Pricing() {
           </button>
         </div>
         {/* Business Plan */}
-        <div className=" relative flex flex-col justify-between rounded-2xl max-w-[370px] aspect-370/491 md:max-w-[324px] md:aspect-324/491 lg:max-w-[327px] lg:aspect-327/580 p-8 shadow-sm border border-neutral-200 shadow-primary-500">
+        <div className="relative flex flex-col justify-between rounded-2xl w-full min-h-[500px] p-8 shadow-sm border border-neutral-200 shadow-primary-500">
           <div className=" absolute right-4">
             <span className="inline-flex items-center rounded-full px-4 py-1 text-xs font-medium text-primary-800 border border-primary-500 bg-primary-100">
               Recommended
@@ -132,7 +132,7 @@ export default function Pricing() {
           </button>
         </div>
         {/* Growth Plan */}
-        <div className="flex flex-col justify-between rounded-2xl max-w-[370px] md:max-w-full md:col-span-2 lg:max-w-[327px] lg:col-span-1 aspect-370/491 md:aspect-auto lg:aspect-327/580 p-8 shadow-lg border border-neutral-200">
+        <div className="flex flex-col justify-between rounded-2xl w-full md:col-span-2 lg:col-span-1 min-h-[500px] p-8 shadow-lg border border-neutral-200">
           <div>
             <div className="flex items-center justify-between">
               <h3 className="text-lg font-medium text-neutral-900">Growth</h3>
@@ -191,7 +191,7 @@ export default function Pricing() {
       </div>
 
       {/* Enterprise Plan */}
-      <div className="mx-auto mt-8 max-w-[370px] aspect-370/644 md:max-w-[664px] md:aspect-664/347 lg:max-w-[1014px] lg:max-h-[410px] lg:aspect-1014/410 relative">
+      <div className="mx-auto mt-8 max-w-[370px] md:max-w-[664px] lg:max-w-[1014px] relative min-h-[400px]">
         <div className="flex flex-col md:flex-row lg:flex-row rounded-2xl bg-linear-to-r p-4 md:p-6 border border-primary-500 relative overflow-hidden">
           {/* Contenido principal a la izquierda */}
           <div className="flex-1 pr-8 md:pr-0">
