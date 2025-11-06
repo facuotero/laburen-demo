@@ -16,10 +16,10 @@ const navigation = [
 
 export function Navbar() {
   const pathname = usePathname();
-  const isHome = ["/",].includes(pathname); // ejemplo
+  const isHome = ["/"].includes(pathname); // ejemplo
   const borderColor = isHome
     ? "border border-transparent"
-    : "border border-neutral-200";
+    : "border border-transparent lg:border-neutral-200";
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const textColor = isHome
     ? "text-white hover:text-neutral-200"
@@ -27,20 +27,24 @@ export function Navbar() {
 
   const [isSticky, setIsSticky] = useState(false);
 
-useEffect(() => {
-  const navbarHeight = document.querySelector("header")?.offsetHeight || 0;
+  useEffect(() => {
+    const navbarHeight = document.querySelector("header")?.offsetHeight || 0;
 
-  const handleScroll = () => {
-    setIsSticky(window.scrollY > navbarHeight);
-  };
+    const handleScroll = () => {
+      setIsSticky(window.scrollY > navbarHeight);
+    };
 
-  window.addEventListener("scroll", handleScroll);
-  return () => window.removeEventListener("scroll", handleScroll);
-}, []);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <header
-      className={`${isSticky ? "fixed top-0 opacity-100 translate-y-0" : "absolute top-0 opacity-100 translate-y-0"} inset-x-0 z-50 lg:px-6 lg:py-6 bg-transparent transition-all duration-700 ease-in-out`}
+      className={`${
+        isSticky
+          ? "fixed top-0 opacity-100 translate-y-0"
+          : "absolute top-0 opacity-100 translate-y-0"
+      } inset-x-0 z-50 lg:px-6 lg:py-6 bg-transparent transition-all duration-700 ease-in-out`}
     >
       <nav
         aria-label="Global"
@@ -59,8 +63,19 @@ useEffect(() => {
           </Link>
         </div>
 
-        {/* Mobile menu button */}
-        <div className="flex lg:hidden">
+        {/* Tablet buttons + Mobile menu button */}
+        <div className="flex lg:hidden items-center gap-3">
+          {/* Tablet buttons - only visible on tablet (md) */}
+          <div className="hidden md:flex md:gap-3">
+            <button className="rounded-full bg-white border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 transition-colors">
+              Talk to sales
+            </button>
+            <button className="inline-flex items-center gap-2 rounded-full bg-neutral-900 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-green-600 transition-colors">
+              Start Creating
+            </button>
+          </div>
+          
+          {/* Mobile menu button */}
           <button
             type="button"
             onClick={() => setMobileMenuOpen(true)}
@@ -101,7 +116,9 @@ useEffect(() => {
         className="lg:hidden"
       >
         <div className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm" />
-<DialogPanel className="fixed inset-0 z-50 w-full bg-neutral-900 p-6">          <div className="flex items-center justify-between">
+        <DialogPanel className="fixed inset-0 z-50 w-full bg-neutral-900 p-6">
+
+          <div className="flex items-center justify-between">
             <Image
               src="/logo_green.svg"
               alt="Laburen"
