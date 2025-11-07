@@ -46,30 +46,30 @@ export function HeroSection() {
         <div className="mt-10">
           <AgentInput />
           <div className="flex flex-wrap justify-center gap-3 max-w-2xl mx-auto mt-4">
-            <span className="px-4 py-2 rounded-full bg-neutral-800/40 border border-neutral-700/50 text-sm text-gray-300 flex items-center gap-2">
+            <button className="px-4 py-2 rounded-full bg-neutral-800/40 border border-neutral-700/50 hover:bg-neutral-700/50 text-sm text-gray-300 flex items-center gap-2">
               <ClipboardAddIcon className="w-4 h-4" color="#00BC7D" />
               {t('hero.features.analyzeData')}
-            </span>
-            <span className="px-4 py-2 rounded-full bg-neutral-800/40 border border-neutral-700/50 text-sm text-gray-300 flex items-center gap-2">
+            </button>
+            <button className="px-4 py-2 rounded-full bg-neutral-800/40 border border-neutral-700/50 hover:bg-neutral-700/50 text-sm text-gray-300 flex items-center gap-2">
               <CalendarIcon className="w-4 h-4" color="#FDC700" />
               {t('hero.features.automateTasks')}
-            </span>
-            <span className="px-4 py-2 rounded-full bg-neutral-800/40 border border-neutral-700/50 text-sm text-gray-300 flex items-center gap-2">
+            </button>
+            <button className="px-4 py-2 rounded-full bg-neutral-800/40 border border-neutral-700/50 hover:bg-neutral-700/50 text-sm text-gray-300 flex items-center gap-2">
               <QuestionCircleIcon color="#00BCFF" />
               {t('hero.features.handleFaqs')}
-            </span>
-            <span className="px-4 py-2 rounded-full bg-neutral-800/40 border border-neutral-700/50 text-sm text-gray-300 flex items-center gap-2">
+            </button>
+            <button className="px-4 py-2 rounded-full bg-neutral-800/40 border border-neutral-700/50 hover:bg-neutral-700/50 text-sm text-gray-300 flex items-center gap-2">
               <HeadsetIcon className="h-4 w-4" color="#FF8904" />
               {t('hero.features.provideSupport')}
-            </span>
-            <span className="px-4 py-2 rounded-full bg-neutral-800/40 border border-neutral-700/50 text-sm text-gray-300 flex items-center gap-2">
+            </button>
+            <button className="px-4 py-2 rounded-full bg-neutral-800/40 border border-neutral-700/50 hover:bg-neutral-700/50 text-sm text-gray-300 flex items-center gap-2">
               <ProductsIcon color="#FF6467" />
               {t('hero.features.productRecommendations')}
-            </span>
-            <span className="px-4 py-2 rounded-full bg-neutral-800/40 border border-neutral-700/50 text-sm text-gray-300 flex items-center gap-2">
+            </button>
+            <button className="px-4 py-2 rounded-full bg-neutral-800/40 border border-neutral-700/50 hover:bg-neutral-700/50 text-sm text-gray-300 flex items-center gap-2">
               <TextIcon color="#A684FF" />
               {t('hero.features.customResponses')}
-            </span>
+            </button>
           </div>
         </div>
 
