@@ -1,57 +1,34 @@
-import Image from 'next/image'
+"use client";
 
-const testimonials = [
-  {
-    body: 'Con Laburen logramos automatizar la atención al cliente en WhatsApp y mejorar nuestras ventas al instante. Ahora nuestros agentes humanos se enfocan en cerrar ventas.',
-    author: {
-      name: 'Carolina Herrera',
-      handle: 'CEO',
-      imageUrl: '/avatars/avatar_wt_maxi.svg',
-    },
-  },
-  {
-    body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    author: {
-      name: 'Axel Jutoran',
-      handle: 'CEO',
-      imageUrl: '/avatars/avatar_nora.svg',
-    },
-  },
-  {
-    body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-    author: {
-      name: 'Axel Jutoran',
-      handle: 'CEO',
-      imageUrl: '/avatars/avatar_wt_consu.svg',
-    },
-  },
-  {
-    body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    author: {
-      name: 'Axel Jutoran',
-      handle: 'CEO',
-      imageUrl: '/avatars/avatar_wt_jorge.svg',
-    },
-  },
-  {
-    body: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
-    author: {
-      name: 'Axel Jutoran',
-      handle: 'CEO',
-      imageUrl: '/avatars/avatar_wt_maxi.svg',
-    },
-  },
-  {
-    body: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.',
-    author: {
-      name: 'Axel Jutoran',
-      handle: 'CEO',
-      imageUrl: '/avatars/avatar_nora.svg',
-    },
-  },
+import Image from 'next/image'
+import { useTranslations } from 'next-intl';
+
+interface TestimonialType {
+  body: string;
+  author: {
+    name: string;
+    role: string;
+  };
+}
+
+const avatars = [
+  '/avatars/avatar_wt_maxi.svg',
+  '/avatars/avatar_nora.svg',
+  '/avatars/avatar_wt_consu.svg',
+  '/avatars/avatar_wt_jorge.svg',
+  '/avatars/avatar_wt_maxi.svg',
+  '/avatars/avatar_nora.svg',
 ]
 
 export default function Testimonials() {
+  const t = useTranslations();
+  const testimonialsData = t.raw('testimonials') as {
+    badge: string;
+    title: string;
+    button: string;
+    items: TestimonialType[];
+  };
+  const testimonials = testimonialsData.items;
   return (
     <div className="bg-white">
       <div className="bg-white w-11/12 mb-4 lg:max-w-7xl m-auto bg-[url('/testimonials-background.svg')] bg-no-repeat bg-position-[0_0] bg-size-[100%_100%] rounded-3xl border border-neutral-200 shadow-lg py-24 sm:py-32 relative overflow-hidden">
@@ -87,15 +64,15 @@ export default function Testimonials() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8 relative">
           <div className="mx-auto max-w-4xl text-center">
             <div className="inline-flex items-center rounded-full bg-primary-700 px-4 py-2 text-sm font-medium mb-6">
-              TESTIMONIALS
+              {testimonialsData.badge}
             </div>
             <h2 className="text-balance text-4xl font-regular tracking-tight text-neutral-600 sm:text-5xl">
-              Companies around the world are already hiring AI Agents with Laburen.com
+              {testimonialsData.title}
             </h2>
           </div>  
                   <div className="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
             <div className="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
-              {testimonials.map((testimonial, i) => (
+              {testimonials.map((testimonial: TestimonialType, i: number) => (
                 <div key={i} className="pt-8 sm:inline-block sm:w-full sm:px-4">
                   <figure className="rounded-2xl bg-white p-8 text-sm/6 shadow-sm border border-gray-100">
                     <blockquote className="text-gray-900">
@@ -104,14 +81,14 @@ export default function Testimonials() {
                     <figcaption className="mt-6 flex items-center gap-x-4">
                       <Image
                         alt={testimonial.author.name}
-                        src={testimonial.author.imageUrl}
+                        src={avatars[i]}
                         width={40}
                         height={40}
                         className="rounded-full bg-gray-50"
                       />
                       <div>
                         <div className="font-semibold text-gray-900">{testimonial.author.name}</div>
-                        <div className="text-gray-600">{`@${testimonial.author.handle}`}</div>
+                        <div className="text-gray-600">{testimonial.author.role}</div>
                       </div>
                     </figcaption>
                   </figure>
@@ -123,7 +100,7 @@ export default function Testimonials() {
           {/* See more button */}
           <div className="mt-16 text-center">
             <button className="inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3 text-sm font-medium text-gray-700 shadow-sm border border-gray-200 hover:bg-gray-50 transition-colors">
-              See more
+              {testimonialsData.button}
             </button>
           </div>
         </div>

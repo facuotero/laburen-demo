@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 
 const navigation = {
   solutions: [
@@ -91,6 +92,8 @@ const navigation = {
 };
 
 export default function Footer() {
+  const t = useTranslations('footer')
+  
   return (
     <footer className="p-2 lg:p-4">
       <div className="rounded-3xl bg-neutral-900 bg-[url('/footer-img.png')] bg-no-repeat bg-position-[3.227px_-261.447px] bg-size-[100%_305.934%] h-auto py-8 px-4 lg:px-12 lg:py-16 lg:h-[455px]">
@@ -104,22 +107,21 @@ export default function Footer() {
               className="h-9 w-auto mb-4"
             />
             <p className="text-balance text-sm/6 text-neutral-200 dark:text-gray-400">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt.
+              {t('description')}
             </p>
           </div>
           <div className="w-1/3 lg:w-[323px] h-[217px] lg:pl-40">
             <h3 className="text-sm/6 font-semibold text-neutral-200 mb-4">
-              Website
+              {t('sections.website')}
             </h3>
             <ul role="list" className="space-y-1">
-              {navigation.solutions.map((item) => (
-                <li key={item.name}>
+              {t.raw('navigation.website').map((item: string, index: number) => (
+                <li key={index}>
                   <a
-                    href={item.href}
+                    href="#"
                     className="text-sm/6 text-neutral-100 hover:text-neutral-400"
                   >
-                    + {item.name}
+                    + {item}
                   </a>
                 </li>
               ))}
@@ -127,16 +129,16 @@ export default function Footer() {
           </div>
           <div className="w-1/3 lg:w-[323px] h-[217px] lg:pl-40">
             <h3 className="text-sm/6 font-semibold text-neutral-200 mb-4">
-              Resources
+              {t('sections.resources')}
             </h3>
             <ul role="list" className="space-y-1">
-              {navigation.support.map((item) => (
-                <li key={item.name}>
+              {t.raw('navigation.resources').map((item: string, index: number) => (
+                <li key={index}>
                   <a
-                    href={item.href}
+                    href="#"
                     className="text-sm/6 text-neutral-100 hover:text-neutral-400"
                   >
-                    + {item.name}
+                    + {item}
                   </a>
                 </li>
               ))}
@@ -144,16 +146,16 @@ export default function Footer() {
           </div>
           <div className="w-1/3 lg:w-[323px] h-[217px] lg:pl-40">
             <h3 className="text-sm/6 font-semibold text-neutral-200 mb-4">
-              Industries
+              {t('sections.industries')}
             </h3>
             <ul role="list" className="space-y-1">
-              {navigation.company.map((item) => (
-                <li key={item.name}>
+              {t.raw('navigation.industries').map((item: string, index: number) => (
+                <li key={index}>
                   <a
-                    href={item.href}
+                    href="#"
                     className="text-sm/6 text-neutral-100 hover:text-neutral-400"
                   >
-                    + {item.name}
+                    + {item}
                   </a>
                 </li>
               ))}
@@ -162,31 +164,31 @@ export default function Footer() {
         </div>
         <div className="px-2 lg:px-8 m-0">
           <p className="text-sm/6 text-neutral-200">
-            Follow Us
+            {t('followUs')}
           </p>
         </div>
         <div className="px-2 lg:px-8 mt-4 flex justify-between flex-wrap">
           <div className="w-full flex justify-around mb-4 lg:mb-0 lg:w-auto lg:gap-x-6">
-            {navigation.social.map((item) => (
+            {navigation.social.map((item, index) => (
               <a
                 key={item.name}
                 href={item.href}
                 className="text-neutral-100 hover:text-neutral-200"
               >
-                <span className="sr-only">{item.name}</span>
+                <span className="sr-only">{t.raw('social')[index]}</span>
                 <item.icon aria-hidden="true" className="size-6" />
               </a>
             ))}
           </div>
           <div className="flex gap-x-6 flex-wrap justify-center lg:justify-start">
             <a className="text-sm/6 text-neutral-600 hover:text-neutral-400 cursor-pointer">
-              Privacy Policy
+              {t('privacyPolicy')}
             </a>
             <a className="text-sm/6 text-neutral-600 hover:text-neutral-400 cursor-pointer">
-              Terms & Conditions
+              {t('termsConditions')}
             </a>
             <p className="text-sm/6 text-neutral-600">
-              &copy; Copyright © 2025 Laburen.com
+              {t('copyright')}
             </p>
           </div>
         </div>

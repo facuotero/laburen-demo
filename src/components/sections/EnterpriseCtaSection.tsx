@@ -1,6 +1,9 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+
 export default function EnterpriseCtaSection() {
+  const t = useTranslations("enterprise");
   return (
     <div className="relative overflow-hidden">
       {/* Background decorative pattern */}
@@ -8,26 +11,25 @@ export default function EnterpriseCtaSection() {
         <div className="mx-auto max-w-4xl py-24 md:py-32 lg:py-32">
           <div className="mb-8 flex justify-center">
             <div className="inline-flex items-center gap-2 rounded-full border border-transparent shadow-primary-600 px-4 py-2 text-sm font-medium text-gray-700 shadow-sm">
-              🚀 Grow without limits
+              {t("cta.badge")}
             </div>
           </div>
           <div className="text-center">
             <h1 className="text-balance font-light text-3xl md:text-6xl lg:text-7xl italic tracking-tight text-neutral-900">
-              Transform your business
+              {t("cta.title.line1")}
             </h1>
             <h1 className="text-balance font-medium italic text-3xl md:text-6xl lg:text-7xl tracking-tight text-primary-500">
-              with Laburen.com
+              {t("cta.title.line2")}
             </h1>
             <p className="mt-8 text-pretty text-base md:text-xl lg:text-xl text-gray-600">
-              Discover how AI can power your growth, simplify processes, and
-              open new opportunities for success.
+              {t("cta.description")}
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-4">
               <button className="rounded-full bg-white border border-gray-300 px-4 py-3 text-sm md:text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 transition-colors whitespace-nowrap">
-                Talk to an Expert
+                {t("cta.buttons.talkToExpert")}
               </button>
               <button className="inline-flex items-center gap-2 rounded-full border border-primary-800 bg-primary-500 px-4 py-3 text-sm md:text-sm font-medium text-white shadow-sm hover:opacity-90 transition-opacity whitespace-nowrap">
-                Start for Free
+                {t("cta.buttons.startForFree")}
               </button>
             </div>
           </div>

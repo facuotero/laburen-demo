@@ -15,8 +15,10 @@ import {
   PieceIcon,
   UsersIcon,
 } from "../../../public/icons/index";
+import { useTranslations } from "next-intl";
 
 export default function Pricing() {
+  const t = useTranslations("pricing");
   return (
     <div className="mx-auto w-full max-w-[370px] md:max-w-[664px] lg:max-w-[1014px] mb-8">
       <div className="mx-auto w-full max-w-[1014px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch justify-items-stretch [&>*]:w-full">
@@ -24,168 +26,170 @@ export default function Pricing() {
         <div className="flex flex-col justify-between rounded-2xl w-full min-h-[500px] p-8 shadow-lg border border-gray-200">
           <div>
             <div className="flex items-center">
-              <h3 className="text-xl font-medium text-neutral-900">Pro</h3>
+              <h3 className="text-xl font-medium text-neutral-900">{t("pro.title")}</h3>
             </div>
             <p className="mt-2">
               <span className="text-4xl font-bold tracking-tight text-neutral-900">
-                $19{" "}
+                {t("pro.price")}{" "}
               </span>
               <span className="text-sm font-medium text-neutral-400">
-                /monthly
+                {t("pro.period")}
               </span>
             </p>
             <p className="mt-4 text-xs md:text-sm lg:text-sm text-neutral-600">
-              For professionals and small teams starting with AI.
+              {t("pro.description")}
             </p>
             <ul className="mt-8 space-y-3 text-sm text-neutral-800">
               <li className="flex gap-x-3">
                 <CoinsIcon className="lg:w-5 lg:h-5" />
-                $19 of included monthly credits
+                {t("pro.features.credits")}
               </li>
               <li className="flex gap-x-3">
                 <UsersIcon className="lg:w-5 lg:h-5" />
-                Unlimited Agents
+                {t("pro.features.agents")}
               </li>
               <li className="flex gap-x-3">
-                <PieceIcon className="lg:w-5 lg:h-5" />1 user per Workspace
+                <PieceIcon className="lg:w-5 lg:h-5" />
+                {t("pro.features.users")}
               </li>
               <li className="flex gap-x-3">
                 <LinkIcon className="lg:w-5 lg:h-5" />
-                {"Basic integrations (WhatsApp, Website, Email)"}
+                {t("pro.features.integrations")}
               </li>
               <li className="flex gap-x-3">
-                <UserIcon className="lg:w-5 lg:h-5" />1 user per Workspace
-              </li>
-              <li className="flex gap-x-3">
-                <CheckIcon className="lg:w-5 lg:h-5" />
-                Escribir aquí
+                <UserIcon className="lg:w-5 lg:h-5" />
+                {t("pro.features.users")}
               </li>
               <li className="flex gap-x-3">
                 <CheckIcon className="lg:w-5 lg:h-5" />
-                Escribir aquí
+                {t("pro.features.placeholder1")}
               </li>
               <li className="flex gap-x-3">
                 <CheckIcon className="lg:w-5 lg:h-5" />
-                Escribir aquí
+                {t("pro.features.placeholder2")}
+              </li>
+              <li className="flex gap-x-3">
+                <CheckIcon className="lg:w-5 lg:h-5" />
+                {t("pro.features.placeholder3")}
               </li>
             </ul>
           </div>
           <button className="mt-8 block w-full rounded-2xl bg-neutral-900 px-3 py-2 text-center text-sm font-medium text-white shadow-sm hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">
-            Upgrade to Pro
+            {t("pro.button")}
           </button>
         </div>
         {/* Business Plan */}
         <div className="relative flex flex-col justify-between rounded-2xl w-full min-h-[500px] p-8 shadow-sm border border-neutral-200 shadow-primary-500">
           <div className=" absolute right-4">
             <span className="inline-flex items-center rounded-full px-4 py-1 text-xs font-medium text-primary-800 border border-primary-500 bg-primary-100">
-              Recommended
+              {t("business.recommended")}
             </span>
           </div>
           <div>
             <div className="flex items-center justify-between">
-              <h3 className="text-xl font-medium text-neutral-900">Business</h3>
+              <h3 className="text-xl font-medium text-neutral-900">{t("business.title")}</h3>
             </div>
             <p className="mt-6">
               <span className="text-4xl font-bold tracking-tight text-primary-800">
-                $99{" "}
+                {t("business.price")}{" "}
               </span>
               <span className="text-sm font-medium text-neutral-400">
-                /monthly
+                {t("business.period")}
               </span>
             </p>
             <p className="mt-4 text-sm text-neutral-600">
-              For teams ready for more power and advanced support.
+              {t("business.description")}
             </p>
             <ul className="mt-8 space-y-3 text-sm text-neutral-800">
               <li className="flex gap-x-3">
                 <StarBadgeIcon className="lg:w-5 lg:h-5" color="#4CC722" />
-                All included in Pro plan +
+                {t("business.features.all")}
               </li>
               <li className="flex gap-x-3">
                 <CoinsIcon className="lg:w-5 lg:h-5" color="#4CC722" />
-                $99 monthly credits included
+                {t("business.features.credits")}
               </li>
               <li className="flex gap-x-3">
                 <GlobeIcon className="lg:w-5 lg:h-5" color="#4CC722" />
-                {"Access to all integrations (Pro, Business)"}
+                {t("business.features.integrations")}
               </li>
               <li className="flex gap-x-3">
                 <BrainIcon className="lg:w-5 lg:h-5 " color="#4CC722" />
-                {"Tech session for a use case implementation (one-time)"}
+                {t("business.features.session")}
               </li>
               <li className="flex gap-x-3">
                 <CheckIcon className="lg:w-5 lg:h-5" color="#4CC722" />
-                Escribir aquí
+                {t("business.features.placeholder1")}
               </li>
               <li className="flex gap-x-3">
                 <CheckIcon className="lg:w-5 lg:h-5 " color="#4CC722" />
-                Escribir aquí
+                {t("business.features.placeholder2")}
               </li>
               <li className="flex gap-x-3">
                 <CheckIcon className="lg:w-5 lg:h-5" color="#4CC722" />
-                Escribir aquí
+                {t("business.features.placeholder3")}
               </li>
             </ul>
           </div>
           <button className="mt-8 block w-full rounded-2xl px-3 py-2 text-center text-sm font-medium text-white shadow-sm focus-visible:outline border-primary-500 bg-linear-to-b from-primary-500 to-[#006B3C] focus-visible:outline-offset-2 focus-visible:outline-black">
-            Start a Business Plan
+            {t("business.button")}
           </button>
         </div>
         {/* Growth Plan */}
         <div className="flex flex-col justify-between rounded-2xl w-full md:col-span-2 lg:col-span-1 min-h-[500px] p-8 shadow-lg border border-neutral-200">
           <div>
             <div className="flex items-center justify-between">
-              <h3 className="text-lg font-medium text-neutral-900">Growth</h3>
+              <h3 className="text-lg font-medium text-neutral-900">{t("growth.title")}</h3>
             </div>
             <p className="mt-6">
               <span className="text-4xl font-bold tracking-tight text-neutral-900">
-                $499
+                {t("growth.price")}
               </span>
               <span className="text-sm font-medium text-neutral-400">
                 {" "}
-                /monthly
+                {t("growth.period")}
               </span>
             </p>
             <p className="mt-4 text-sm text-neutral-600">
-              For teams ready for more power and advanced support.
+              {t("growth.description")}
             </p>
             <ul className="mt-8 space-y-3 text-sm text-neutral-800">
               <li className="flex gap-x-3">
                 <HandshakeIcon className="lg:w-5 lg:h-5" />
-                Tailored Agent Implementation and Integrations
+                {t("growth.features.implementation")}
               </li>
               <li className="flex gap-x-3">
                 <MonitorIcon className="lg:w-5 lg:h-5" />
-                Dedicated Customer Success Manager
+                {t("growth.features.manager")}
               </li>
               <li className="flex gap-x-3">
                 <HeadsetIcon className="lg:w-5 lg:h-5" />
-                Dedicated Customer Success Manager
+                {t("growth.features.support")}
               </li>
               <li className="flex gap-x-3">
                 <DiamondIcon className="lg:w-5 lg:h-5 " />
-                Scalable Credit Volume
+                {t("growth.features.credits")}
               </li>
               <li className="flex gap-x-3">
                 <RefreshIcon className="lg:w-5 lg:h-5 " />
-                Up to 5 connection actions per Agent
+                {t("growth.features.actions")}
               </li>
               <li className="flex gap-x-3">
                 <CheckIcon className="lg:w-5 lg:h-5" />
-                Escribir aquí
+                {t("growth.features.placeholder1")}
               </li>
               <li className="flex gap-x-3">
                 <CheckIcon className="lg:w-5 lg:h-5" />
-                Escribir aquí
+                {t("growth.features.placeholder2")}
               </li>
               <li className="flex gap-x-3">
                 <CheckIcon className="lg:w-5 lg:h-5" />
-                Escribir aquí
+                {t("growth.features.placeholder3")}
               </li>
             </ul>
           </div>
           <button className="mt-8 block w-full rounded-2xl bg-black px-3 py-2 text-center text-sm font-medium text-white shadow-sm hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">
-            Start a Business Plan
+            {t("growth.button")}
           </button>
         </div>
       </div>
@@ -197,36 +201,36 @@ export default function Pricing() {
           <div className="flex-1 pr-8 md:pr-0">
             <div className="flex items-center justify-between">
               <h3 className="text-base md:text-xl lg:text-xl font-semibold text-neutral-900">
-                Enterprise
+                {t("enterprise.title")}
               </h3>
             </div>
             <p className="mt-4 md:mt-4 text-xs md:text-sm lg:text-sm text-neutral-500">
-              For ambitious companies ready to scale with AI.
+              {t("enterprise.description")}
             </p>
             <ul className="mt-8 space-y-3 text-sm text-neutral-800">
               <li className="flex gap-x-3">
                 <CheckIcon className="w-5 h-5" color="#4CC722" />
-                500,000 monthly credits included
+                {t("enterprise.features.credits")}
               </li>
               <li className="flex gap-x-3">
                 <CheckIcon className="w-5 h-5" color="#4CC722" />
-                Dedicated technical support
+                {t("enterprise.features.support")}
               </li>
               <li className="flex gap-x-3">
                 <CheckIcon className="w-5 h-5" color="#4CC722" />
-                Conversation analysis and reports
+                {t("enterprise.features.analysis")}
               </li>
               <li className="flex gap-x-3">
                 <CheckIcon className="w-5 h-5" color="#4CC722" />
-                Dedicated account manager
+                {t("enterprise.features.manager")}
               </li>
               <li className="flex gap-x-3">
                 <CheckIcon className="w-5 h-5" color="#4CC722" />
-                Advanced integrations + API access
+                {t("enterprise.features.integrations")}
               </li>
             </ul>
             <button className="mt-8 md:mt-4 md:w-[294px] hidden md:visible lg:visible items-center rounded-2xl bg-primary-500 px-6 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-600  focus-visible:outline-offset-2 focus-visible:outline-green-500">
-              Learn More
+              {t("enterprise.button")}
             </button>
           </div>
           {/* Imagen Nora - alineada a la derecha y al fondo */}
@@ -241,7 +245,7 @@ export default function Pricing() {
               />
             </div>
             <button className="md:hidden lg:hidden mx-auto w-full rounded-2xl bg-primary-500 px-6 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-600 focus-visible:outline-offset-2 focus-visible:outline-green-500">
-              Learn More
+              {t("enterprise.button")}
             </button>
           </div>
         </div>

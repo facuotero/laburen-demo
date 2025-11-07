@@ -9,8 +9,11 @@ import {
   QuestionCircleIcon,
 } from "../../../public/icons";
 import { CarouselSpacing } from "../Carousel";
+import { useTranslations } from 'next-intl';
 
 export function HeroSection() {
+  const t = useTranslations();
+
   return (
     <section className="relative isolate overflow-hidden bg-linear-to-b from-neutral-950 via-neutral-900 to-neutral-950 text-neutral-50 pt-32 pb-10">
       {/* Background glow */}
@@ -22,23 +25,22 @@ export function HeroSection() {
           {/* Badge con estrellas */}
           <div className="inline-flex items-center gap-2 rounded-full border border-neutral-700 bg-neutral-800/60 px-4 py-1.5 text-sm text-gray-300">
             <div className="flex text-yellow-400">⭐⭐⭐⭐⭐</div>
-            <span className="text-gray-400">per 1,000 customers</span>
+            <span className="text-gray-400">{t('hero.badge')}</span>
           </div>
 
           {/* Título */}
           <h1 className="text-center leading-tight text-gray-100">
             <span className="block text-3xl sm:text-4xl italic font-light">
-              Create your next
+              {t('hero.title.line1')}
             </span>
             <span className="block text-5xl sm:text-6xl font-serif ">
-              AI Agent
+              {t('hero.title.line2')}
             </span>
           </h1>
         </div>
 
         <p className="mt-6 text-lg text-gray-400 mx-auto">
-          Boost your business with Agents, virtual employees trained on your
-          data — all powered by AI.
+          {t('hero.subtitle')}
         </p>
 
         <div className="mt-10">
@@ -46,33 +48,33 @@ export function HeroSection() {
           <div className="flex flex-wrap justify-center gap-3 max-w-2xl mx-auto mt-4">
             <span className="px-4 py-2 rounded-full bg-neutral-800/40 border border-neutral-700/50 text-sm text-gray-300 flex items-center gap-2">
               <ClipboardAddIcon className="w-4 h-4" color="#00BC7D" />
-              Analyze data & answer questions
+              {t('hero.features.analyzeData')}
             </span>
             <span className="px-4 py-2 rounded-full bg-neutral-800/40 border border-neutral-700/50 text-sm text-gray-300 flex items-center gap-2">
               <CalendarIcon className="w-4 h-4" color="#FDC700" />
-              Automate repetitive tasks
+              {t('hero.features.automateTasks')}
             </span>
             <span className="px-4 py-2 rounded-full bg-neutral-800/40 border border-neutral-700/50 text-sm text-gray-300 flex items-center gap-2">
               <QuestionCircleIcon color="#00BCFF" />
-              Handle FAQs
+              {t('hero.features.handleFaqs')}
             </span>
             <span className="px-4 py-2 rounded-full bg-neutral-800/40 border border-neutral-700/50 text-sm text-gray-300 flex items-center gap-2">
               <HeadsetIcon className="h-4 w-4" color="#FF8904" />
-              Provide 24/7 support
+              {t('hero.features.provideSupport')}
             </span>
             <span className="px-4 py-2 rounded-full bg-neutral-800/40 border border-neutral-700/50 text-sm text-gray-300 flex items-center gap-2">
               <ProductsIcon color="#FF6467" />
-              Product recommendations
+              {t('hero.features.productRecommendations')}
             </span>
             <span className="px-4 py-2 rounded-full bg-neutral-800/40 border border-neutral-700/50 text-sm text-gray-300 flex items-center gap-2">
               <TextIcon color="#A684FF" />
-              Custom responses
+              {t('hero.features.customResponses')}
             </span>
           </div>
         </div>
 
         <p className="mt-16 text-2xl">
-          {"Your next hire isn't human. These companies already know it..."}
+          {t("hero.companiesText")}
         </p>
       </div>
 

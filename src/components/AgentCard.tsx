@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 interface Agent {
   name: string;
@@ -104,24 +105,26 @@ const imagesSection = {
 };
 
 export function AgentCard({ agents, type = "employees" }: AgentCardProps) {
-  const selectedAgents = agents || agentGroups[type];
+  const t = useTranslations("hero.agents");
+  
+  const selectedAgents = agents || t.raw(`${type}.agents`);
 
   const titles = {
-    employees: "Your ideal employee\nfor every task.",
-    platforms: "Connect with\nplatforms seamlessly ",
-    integrations: "Your favorite business apps,\nready to scale with you.",
+    employees: t(`${type}.title`),
+    platforms: t(`${type}.title`),
+    integrations: t(`${type}.title`),
   };
 
   const sectionTitles = {
-    employees: "Agents",
-    platforms: "Tools",
-    integrations: "Integrations",
+    employees: t(`${type}.sectionTitle`),
+    platforms: t(`${type}.sectionTitle`),
+    integrations: t(`${type}.sectionTitle`),
   };
 
   const linkTexts = {
-    employees: "Create your now →",
-    platforms: "See all tools →",
-    integrations: "See all integrations →",
+    employees: t(`${type}.linkText`),
+    platforms: t(`${type}.linkText`),
+    integrations: t(`${type}.linkText`),
   };
 
   return (
@@ -162,7 +165,7 @@ export function AgentCard({ agents, type = "employees" }: AgentCardProps) {
         </div>
 
         {/* CARDS PEQUEÑAS DE AGENTES */}
-        {selectedAgents.map((agent) => (
+        {selectedAgents.map((agent: Agent, index: number) => (
           <div
             key={agent.name}
             className="rounded-xl border border-neutral-200 bg-white/10 p-2 shadow-sm hover:bg-white/20 transition-colors lg:p-4"
@@ -173,7 +176,7 @@ export function AgentCard({ agents, type = "employees" }: AgentCardProps) {
                 <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full">
                   <Image
                     src={
-                      agent.avatar ||
+                      agentGroups[type][index]?.avatar ||
                       `/images/agents-${agent.name.toLowerCase()}.png`
                     }
                     alt={agent.name}
