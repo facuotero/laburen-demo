@@ -3,12 +3,14 @@
 import { Textarea } from "@/components/ui/textarea"
 import { ArrowUp } from "lucide-react"
 import { ClipIcon } from "../../public/icons"
+import { useTranslations } from "next-intl"
 
 export function AgentInput() {
+  const t = useTranslations("hero.agentInput");
   return (
     <div className="relative max-w-3xl mx-auto">
       <Textarea
-        placeholder="Write what you want your agent to do..."
+        placeholder={t("placeholder")}
         className="font-regular text-sm lg:text-base w-full min-h-[100px] lg:max-h-[100px] resize-none rounded-3xl bg-white/5 border border-neutral-700 text-neutral-300 p-4 placeholder-neutral-300 focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:outline-none"
       />
       <div className="absolute right-2 bottom-2 flex items-center gap-2">

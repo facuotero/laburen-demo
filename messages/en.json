@@ -1,0 +1,450 @@
+{
+  "navbar": {
+    "brand": "LABUREN.COM",
+    "partners": "Partners",
+    "enterprise": "Enterprise",
+    "plans": "Plans",
+    "resources": "Resources",
+    "talkToSales": "Talk to sales",
+    "startCreating": "Start Creating",
+    "viewPlans": "View Plans",
+    "getInTouch": "Get in touch"
+  },
+  "hero": {
+    "badge": "per 1,000 customers",
+    "title": {
+      "line1": "Create your next",
+      "line2": "AI Agent"
+    },
+    "subtitle": "Boost your business with Agents, virtual employees trained on your data — all powered by AI.",
+    "features": {
+      "analyzeData": "Analyze data & answer questions",
+      "automateTasks": "Automate repetitive tasks",
+      "handleFaqs": "Handle FAQs",
+      "provideSupport": "Provide 24/7 support",
+      "productRecommendations": "Product recommendations",
+      "customResponses": "Custom responses"
+    },
+    "companiesText": "Your next hire isn't human. These companies already know it...",
+    "agentInput": {
+      "placeholder": "Write what you want your agent to do..."
+    },
+    "agents": {
+      "section": {
+        "title": "Create, Connect, and Power Your Business with AI employees"
+      },
+      "employees": {
+        "sectionTitle": "Agents",
+        "title": "Your ideal employee\nfor every task.",
+        "linkText": "Create your now →",
+        "agents": [
+          {
+            "name": "Maxi",
+            "role": "Sales",
+            "description": "Connects with potential clients and helps close deals."
+          },
+          {
+            "name": "Nora",
+            "role": "Administration",
+            "description": "Schedules meetings and organizes clients."
+          },
+          {
+            "name": "Consu",
+            "role": "Support & Post-Sales",
+            "description": "Handles customer queries and ensures satisfaction."
+          },
+          {
+            "name": "Jorge",
+            "role": "Wholesale Sales",
+            "description": "Manages orders and coordinates deliveries."
+          }
+        ]
+      },
+      "platforms": {
+        "sectionTitle": "Tools",
+        "title": "Connect with\nplatforms seamlessly ",
+        "linkText": "See all tools →",
+        "agents": [
+          {
+            "name": "Tokko CRM",
+            "role": "CRM",
+            "description": "Connect and authenticate your AI agents with multiple platforms"
+          },
+          {
+            "name": "Kommo",
+            "role": "Support & Post-Sales",
+            "description": "Advises clients throughout the entire post-purchase process"
+          },
+          {
+            "name": "Cal.com",
+            "role": "Support & Post-Sales",
+            "description": "Advises clients throughout the entire post-purchase process"
+          },
+          {
+            "name": "Google Calendar",
+            "role": "Organization",
+            "description": "Automatically schedules and organizes your meetings."
+          }
+        ]
+      },
+      "integrations": {
+        "sectionTitle": "Integrations",
+        "title": "Your favorite business apps,\nready to scale with you.",
+        "linkText": "See all integrations →",
+        "agents": [
+          {
+            "name": "Instagram",
+            "role": "Social Media",
+            "description": "Turn every interaction into a sales opportunity"
+          },
+          {
+            "name": "Whatsapp",
+            "role": "Messaging",
+            "description": "Automates communication and improves real-time support."
+          },
+          {
+            "name": "Odoo",
+            "role": "ERP",
+            "description": "Optimizes sales, inventory, and internal processes with ease"
+          },
+          {
+            "name": "Google Drive",
+            "role": "Storage",
+            "description": "Organize and manage documents with AI."
+          }
+        ]
+      }
+    },
+    "content": {
+      "title": {
+        "main": "AI is not here to replace us, but to",
+        "highlight": "amplify us."
+      },
+      "paragraphs": [
+        "At Laburen, we believe people should focus on what truly matters.",
+        "Artificial Intelligence is here to free your time, boost your ideas, and open new opportunities for your business to grow and evolve.",
+        "Our mission is simple: make AI agents accessible to everyone.",
+        "It shouldn't be a privilege for a few tech giants, but a real tool for entrepreneurs, businesses, and companies that want to transform the way they work.",
+        {
+          "text": "We believe in a more human and innovative world, where technology has one clear purpose:",
+          "highlight": "to improve people's lives."
+        },
+        "That's the commitment that drives us. That's the heart of Laburen."
+      ],
+      "footer": "Every revolution starts with a Shovel, like ours.",
+      "button": "See our vision"
+    }
+  },
+  "pricing": {
+    "pro": {
+      "title": "Pro",
+      "price": "$19",
+      "period": "/monthly",
+      "description": "For professionals and small teams starting with AI.",
+      "features": {
+        "credits": "$19 of included monthly credits",
+        "agents": "Unlimited Agents",
+        "users": "1 user per Workspace",
+        "integrations": "Basic integrations (WhatsApp, Website, Email)",
+        "placeholder1": "Advanced analytics dashboard",
+        "placeholder2": "Priority email support",
+        "placeholder3": "Custom branding options"
+      },
+      "button": "Upgrade to Pro"
+    },
+    "business": {
+      "title": "Business",
+      "price": "$99",
+      "period": "/monthly",
+      "description": "For teams ready for more power and advanced support.",
+      "recommended": "Recommended",
+      "features": {
+        "all": "All included in Pro plan +",
+        "credits": "$99 monthly credits included",
+        "integrations": "Access to all integrations (Pro, Business)",
+        "session": "Tech session for a use case implementation (one-time)",
+        "placeholder1": "Team collaboration tools",
+        "placeholder2": "Advanced workflow automation",
+        "placeholder3": "Multi-channel support"
+      },
+      "button": "Start a Business Plan"
+    },
+    "growth": {
+      "title": "Growth",
+      "price": "$499",
+      "period": "/monthly",
+      "description": "For teams ready for more power and advanced support.",
+      "features": {
+        "implementation": "Tailored Agent Implementation and Integrations",
+        "manager": "Dedicated Customer Success Manager",
+        "support": "Dedicated Customer Success Manager",
+        "credits": "Scalable Credit Volume",
+        "actions": "Up to 5 connection actions per Agent",
+        "placeholder1": "Custom AI model training",
+        "placeholder2": "Advanced security features",
+        "placeholder3": "SLA guarantees"
+      },
+      "button": "Start a Business Plan"
+    },
+    "enterprise": {
+      "title": "Enterprise",
+      "description": "For ambitious companies ready to scale with AI.",
+      "features": {
+        "credits": "500,000 monthly credits included",
+        "support": "Dedicated technical support",
+        "analysis": "Conversation analysis and reports",
+        "manager": "Dedicated account manager",
+        "integrations": "Advanced integrations + API access"
+      },
+      "button": "Learn More"
+    }
+  },
+  "plans": {
+    "badge": "Credit-based pricing",
+    "moreInfo": "More information →",
+    "title": "Plans and Pricing",
+    "subtitle": "Growth with AI",
+    "description": "Get started immediately for free. Upgrade for more credits, usage and collaboration."
+  },
+  "testimonials": {
+    "badge": "TESTIMONIALS",
+    "title": "Companies around the world are already hiring AI Agents with Laburen.com",
+    "button": "See more",
+    "items": [
+      {
+        "body": "With Laburen we managed to automate customer service on WhatsApp and improve our sales instantly. Now our human agents focus on closing sales.",
+        "author": {
+          "name": "Carolina Herrera",
+          "role": "CEO"
+        }
+      },
+      {
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "author": {
+          "name": "Axel Jutoran",
+          "role": "CEO"
+        }
+      },
+      {
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "author": {
+          "name": "Axel Jutoran",
+          "role": "CEO"
+        }
+      },
+      {
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "author": {
+          "name": "Axel Jutoran",
+          "role": "CEO"
+        }
+      },
+      {
+        "body": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+        "author": {
+          "name": "Axel Jutoran",
+          "role": "CEO"
+        }
+      },
+      {
+        "body": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.",
+        "author": {
+          "name": "Axel Jutoran",
+          "role": "CEO"
+        }
+      }
+    ]
+  },
+  "faq": {
+    "general": {
+      "title": "Frequently asked questions",
+      "subtitle": "Find answers to the most common questions about Laburen, our technology, and how it can help you transform the way you work.",
+      "button": "Schedule a Free Consultation",
+      "questions": [
+        {
+          "question": "What is Laburen.com?",
+          "answer": "Laburen.com creates AI Employees — intelligent assistants that automate sales, customer support, logistics, and business operations. Unlike traditional chatbots, our AI Employees learn, adapt, and improve over time."
+        },
+        {
+          "question": "What's the difference between an AI Employee and a regular chatbot?",
+          "answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+          "question": "What tasks can AI Employees handle?",
+          "answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+        },
+        {
+          "question": "Is Laburen.com secure?",
+          "answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat. Neque porro quisquam est, qui dolorem ipsum quia dolor."
+        },
+        {
+          "question": "How do I get started with Laburen.com?",
+          "answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet."
+        }
+      ]
+    }
+  },
+  "usage": {
+    "title": "How companies use Laburen",
+    "subtitle": "From startups to large corporations, Laburen adapts to any industry: ecommerce, healthcare, logistics, real estate, and more.",
+    "companies": {
+      "tao": {
+        "title": "Education Without Delays",
+        "description": "With AI, TAO handles thousands of student queries in real time, cutting 70% of manual tasks. More focus on teaching, less on repetitive work."
+      },
+      "cargo": {
+        "title": "Seamless Logistics",
+        "description": "Automated tracking and quotes save hours of work each week. Instant answers for clients and a faster, more efficient team."
+      },
+      "vias3d": {
+        "title": "Leads That Come on Their Own",
+        "description": "AI tripled their qualified leads without growing the team. Prospecting is now automatic, and sales move faster than ever."
+      },
+      "europie": {
+        "title": "Healthcare With More Human Time",
+        "description": "Automated scheduling and less admin work. With AI, the team spends more time where it matters: caring for patients."
+      }
+    }
+  },
+  "heroCta": {
+    "badge": "🚀 Limitless growth",
+    "title": "Is your business ready for the next level",
+    "highlight": "next level",
+    "description": "AI can be the competitive edge your organization needs. With Laburen Enterprise, we design AI Agents tailored to your goals, teams, and processes — bringing more efficiency, more impact, and more time for what really matters.",
+    "buttons": {
+      "talkToExpert": "Talk to an Expert",
+      "exploreEnterprise": "Explore Enterprise"
+    }
+  },
+  "footer": {
+    "sections": {
+      "website": "Website",
+      "resources": "Resources",
+      "industries": "Industries"
+    },
+    "navigation": {
+      "website": ["Home", "Plans", "Contact", "Blog", "Clients", "Partners"],
+      "resources": [
+        "AI Employees",
+        "Sales",
+        "Customer Support",
+        "Administration",
+        "Wholesale Management",
+        "Integrations"
+      ],
+      "industries": [
+        "Ecommerce",
+        "Healthcare",
+        "Manufacturing",
+        "Real State",
+        "Logistics",
+        "Software"
+      ]
+    },
+    "social": ["Facebook", "Instagram", "X", "GitHub", "YouTube"]
+  },
+  "enterprise": {
+    "hero": {
+      "title": {
+        "line1": "Scale your business with",
+        "line2": "AI Employees"
+      },
+      "description": "Integrate smart assistants that work 24/7 in just\nminutes, with no technical knowledge required.\nSave time, reduce costs, and boost your team's\nproductivity.",
+      "buttons": {
+        "viewPlans": "View Plans",
+        "getInTouch": "Get in touch"
+      }
+    },
+    "stats": {
+      "title1": "More than 10.000 companies in Latin America already",
+      "title2": "use Laburen.com to grow with Artificial Intelligence",
+      "items": [
+        {
+          "value": "85%",
+          "prefix": "+",
+          "description": "of repetitive tasks eliminated with AI."
+        },
+        {
+          "value": "3x",
+          "prefix": "",
+          "description": "faster sales and support processes."
+        },
+        {
+          "value": "70%",
+          "prefix": "+",
+          "description": "of our users had no prior experience with AI."
+        }
+      ]
+    },
+    "globalAlliances": {
+      "title": {
+        "line1": "Powering businesses",
+        "line2": "through Global Alliances"
+      },
+      "nvidia": {
+        "title": "Innovation validated by NVIDIA:",
+        "highlight": "a global mark of trust.",
+        "paragraphs": [
+          "Being part of NVIDIA Inception is a global recognition that validates Laburen.com as one of the startups with the greatest projection in Artificial Intelligence.",
+          "It's not just about belonging to a program: it means being evaluated and backed by NVIDIA's technical team, who identified in us real innovation, scalability, and a practical approach to solving business challenges. What sets us apart — and caught NVIDIA's attention — is our ability to retrain Large Language Models (LLMs) for specific industries.",
+          "We don't work with generic AI: we adapt it to the language of each business, with the technological power driving today's global leaders. With NVIDIA as our ally, our AI agents don't just scale — they become engines of transformation for companies worldwide."
+        ],
+        "button": "Discover more"
+      },
+      "microsoft": {
+        "intro": "Laburen Enterprise: scaling AI into new markets.",
+        "paragraphs": [
+          "Joining the Microsoft for Startups network opened the door to a global ecosystem of innovation. This isn't just a partnership; it's the opportunity to build with greater reach, speed, and security — backed by the infrastructure and tools of one of the world's most influential tech companies.",
+          "With Laburen Enterprise as a key partner, we deliver scalable AI solutions that drive transformation across industries and regions, turning promise into competitive advantage."
+        ],
+        "button": "Discover more"
+      }
+    },
+    "faq": {
+      "title": "Boost your business with Laburen Enterprise",
+      "questions": [
+        {
+          "question": "Together we grow, and here are some key results:",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        {
+          "question": "Can AI Employees access my company's data?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        {
+          "question": "Can my non-technical team use the platform?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        {
+          "question": "Can I define their behavior?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        {
+          "question": "Can AI Employees take action?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        {
+          "question": "Can I get statistics and analytics?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        {
+          "question": "Where do AI Employees actually work?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        }
+      ],
+      "button": "Schedule a Free Consultation"
+    },
+    "cta": {
+      "badge": "🚀 Grow without limits",
+      "title": {
+        "line1": "Transform your business",
+        "line2": "with Laburen.com"
+      },
+      "description": "Discover how AI can power your growth, simplify processes, and open new opportunities for success.",
+      "buttons": {
+        "talkToExpert": "Talk to an Expert",
+        "startForFree": "Start for Free"
+      }
+    }
+  }
+}

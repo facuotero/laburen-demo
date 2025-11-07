@@ -1,0 +1,450 @@
+{
+  "navbar": {
+    "brand": "LABUREN.COM",
+    "partners": "Socios",
+    "enterprise": "Empresas",
+    "plans": "Planes",
+    "resources": "Recursos",
+    "talkToSales": "Hablar con ventas",
+    "startCreating": "Comenzar a Crear",
+    "viewPlans": "Ver Planes",
+    "getInTouch": "Ponerte en contacto"
+  },
+  "hero": {
+    "badge": "por 1,000 clientes",
+    "title": {
+      "line1": "Crea tu próximo",
+      "line2": "Agente IA"
+    },
+    "subtitle": "Impulsa tu negocio con Agentes, empleados virtuales entrenados con tus datos — todo potenciado por IA.",
+    "features": {
+      "analyzeData": "Analizar datos y responder preguntas",
+      "automateTasks": "Automatizar tareas repetitivas",
+      "handleFaqs": "Manejar preguntas frecuentes",
+      "provideSupport": "Proporcionar soporte 24/7",
+      "productRecommendations": "Recomendaciones de productos",
+      "customResponses": "Respuestas personalizadas"
+    },
+    "companiesText": "Tu próxima contratación no es humana. Estas empresas ya lo saben...",
+    "agentInput": {
+      "placeholder": "Escribe lo que quieres que haga tu agente..."
+    },
+    "agents": {
+      "section": {
+        "title": "Crea, Conecta y Potencia Tu Negocio con empleados IA"
+      },
+      "employees": {
+        "sectionTitle": "Agentes",
+        "title": "Tu empleado ideal\npara cada tarea.",
+        "linkText": "Crea el tuyo ahora →",
+        "agents": [
+          {
+            "name": "Maxi",
+            "role": "Ventas",
+            "description": "Se conecta con clientes potenciales y ayuda a cerrar ofertas."
+          },
+          {
+            "name": "Nora",
+            "role": "Administración",
+            "description": "Programa reuniones y organiza clientes."
+          },
+          {
+            "name": "Consu",
+            "role": "Soporte y Post-Venta",
+            "description": "Maneja consultas de clientes y garantiza la satisfacción."
+          },
+          {
+            "name": "Jorge",
+            "role": "Ventas Mayoristas",
+            "description": "Gestiona pedidos y coordina entregas."
+          }
+        ]
+      },
+      "platforms": {
+        "sectionTitle": "Herramientas",
+        "title": "Conecta con\nplataformas fácilmente ",
+        "linkText": "Ver todas las herramientas →",
+        "agents": [
+          {
+            "name": "Tokko CRM",
+            "role": "CRM",
+            "description": "Conecta y autentica tus agentes IA con múltiples plataformas"
+          },
+          {
+            "name": "Kommo",
+            "role": "Soporte y Post-Venta",
+            "description": "Encargada de asesorar el cliente en todo el proceso después de la compra"
+          },
+          {
+            "name": "Cal.com",
+            "role": "Soporte y Post-Venta",
+            "description": "Encargada de asesorar el cliente en todo el proceso después de la compra"
+          },
+          {
+            "name": "Google Calendar",
+            "role": "Organización",
+            "description": "Programa y organiza automáticamente tus reuniones."
+          }
+        ]
+      },
+      "integrations": {
+        "sectionTitle": "Integraciones",
+        "title": "Tus apps de negocio favoritas,\nlistas para escalar contigo.",
+        "linkText": "Ver todas las integraciones →",
+        "agents": [
+          {
+            "name": "Instagram",
+            "role": "Redes Sociales",
+            "description": "Convierte cada interacción en una oportunidad de venta"
+          },
+          {
+            "name": "Whatsapp",
+            "role": "Mensajería",
+            "description": "Automatiza la comunicación y mejora el soporte en tiempo real."
+          },
+          {
+            "name": "Odoo",
+            "role": "ERP",
+            "description": "Optimiza ventas, inventario y procesos internos con facilidad"
+          },
+          {
+            "name": "Google Drive",
+            "role": "Almacenamiento",
+            "description": "Organiza y gestiona documentos con IA."
+          }
+        ]
+      }
+    },
+    "content": {
+      "title": {
+        "main": "La IA no está aquí para reemplazarnos, sino para",
+        "highlight": "amplificarnos."
+      },
+      "paragraphs": [
+        "En Laburen, creemos que las personas deberían enfocarse en lo que realmente importa.",
+        "La Inteligencia Artificial está aquí para liberar tu tiempo, potenciar tus ideas y abrir nuevas oportunidades para que tu negocio crezca y evolucione.",
+        "Nuestra misión es simple: hacer que los agentes de IA sean accesibles para todos.",
+        "No debería ser un privilegio de unos pocos gigantes tecnológicos, sino una herramienta real para emprendedores, empresas y compañías que quieren transformar la forma en que trabajan.",
+        {
+          "text": "Creemos en un mundo más humano e innovador, donde la tecnología tiene un propósito claro:",
+          "highlight": "mejorar la vida de las personas."
+        },
+        "Ese es el compromiso que nos impulsa. Ese es el corazón de Laburen."
+      ],
+      "footer": "Toda revolución comienza con una Pala, como la nuestra.",
+      "button": "Ver nuestra visión"
+    }
+  },
+  "pricing": {
+    "pro": {
+      "title": "Pro",
+      "price": "$19",
+      "period": "/mensual",
+      "description": "Para profesionales y equipos pequeños que comienzan con IA.",
+      "features": {
+        "credits": "$19 de créditos mensuales incluidos",
+        "agents": "Agentes Ilimitados",
+        "users": "1 usuario por Espacio de Trabajo",
+        "integrations": "Integraciones básicas (WhatsApp, Sitio Web, Email)",
+        "placeholder1": "Panel de análisis avanzado",
+        "placeholder2": "Soporte prioritario por email",
+        "placeholder3": "Opciones de marca personalizada"
+      },
+      "button": "Actualizar a Pro"
+    },
+    "business": {
+      "title": "Business",
+      "price": "$99",
+      "period": "/mensual",
+      "description": "Para equipos listos para más poder y soporte avanzado.",
+      "recommended": "Recomendado",
+      "features": {
+        "all": "Todo incluido en el plan Pro +",
+        "credits": "$99 créditos mensuales incluidos",
+        "integrations": "Acceso a todas las integraciones (Pro, Business)",
+        "session": "Sesión técnica para implementación de caso de uso (única vez)",
+        "placeholder1": "Herramientas de colaboración en equipo",
+        "placeholder2": "Automatización avanzada de flujos de trabajo",
+        "placeholder3": "Soporte multicanal"
+      },
+      "button": "Comenzar Plan Business"
+    },
+    "growth": {
+      "title": "Growth",
+      "price": "$499",
+      "period": "/mensual",
+      "description": "Para equipos listos para más poder y soporte avanzado.",
+      "features": {
+        "implementation": "Implementación e Integraciones de Agente Personalizada",
+        "manager": "Gerente de Éxito del Cliente Dedicado",
+        "support": "Gerente de Éxito del Cliente Dedicado",
+        "credits": "Volumen de Créditos Escalable",
+        "actions": "Hasta 5 acciones de conexión por Agente",
+        "placeholder1": "Entrenamiento personalizado de modelos IA",
+        "placeholder2": "Características avanzadas de seguridad",
+        "placeholder3": "Garantías de SLA"
+      },
+      "button": "Comenzar Plan Business"
+    },
+    "enterprise": {
+      "title": "Enterprise",
+      "description": "Para empresas ambiciosas listas para escalar con IA.",
+      "features": {
+        "credits": "500,000 créditos mensuales incluidos",
+        "support": "Soporte técnico dedicado",
+        "analysis": "Análisis de conversaciones y reportes",
+        "manager": "Gerente de cuenta dedicado",
+        "integrations": "Integraciones avanzadas + acceso API"
+      },
+      "button": "Aprender Más"
+    }
+  },
+  "plans": {
+    "badge": "Precios basados en créditos",
+    "moreInfo": "Más información →",
+    "title": "Planes y Precios",
+    "subtitle": "Crecimiento con IA",
+    "description": "Comienza inmediatamente gratis. Actualiza para más créditos, uso y colaboración."
+  },
+  "testimonials": {
+    "badge": "TESTIMONIOS",
+    "title": "Empresas de todo el mundo ya están contratando Agentes IA con Laburen.com",
+    "button": "Ver más",
+    "items": [
+      {
+        "body": "Con Laburen logramos automatizar la atención al cliente por WhatsApp y mejorar nuestras ventas al instante. Ahora nuestros agentes humanos se enfocan en cerrar ventas.",
+        "author": {
+          "name": "Carolina Herrera",
+          "role": "CEO"
+        }
+      },
+      {
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "author": {
+          "name": "Axel Jutoran",
+          "role": "CEO"
+        }
+      },
+      {
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "author": {
+          "name": "Axel Jutoran",
+          "role": "CEO"
+        }
+      },
+      {
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "author": {
+          "name": "Axel Jutoran",
+          "role": "CEO"
+        }
+      },
+      {
+        "body": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+        "author": {
+          "name": "Axel Jutoran",
+          "role": "CEO"
+        }
+      },
+      {
+        "body": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.",
+        "author": {
+          "name": "Axel Jutoran",
+          "role": "CEO"
+        }
+      }
+    ]
+  },
+  "faq": {
+    "general": {
+      "title": "Preguntas frecuentes",
+      "subtitle": "Encuentra respuestas a las preguntas más comunes sobre Laburen, nuestra tecnología, y cómo puede ayudarte a transformar la forma en que trabajas.",
+      "button": "Agenda una Consulta Gratuita",
+      "questions": [
+        {
+          "question": "¿Qué es Laburen.com?",
+          "answer": "Laburen.com crea Empleados IA — asistentes inteligentes que automatizan ventas, soporte al cliente, logística y operaciones comerciales. A diferencia de los chatbots tradicionales, nuestros Empleados IA aprenden, se adaptan y mejoran con el tiempo."
+        },
+        {
+          "question": "¿Cuál es la diferencia entre un Empleado IA y un chatbot regular?",
+          "answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+          "question": "¿Qué tareas pueden manejar los Empleados IA?",
+          "answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+        },
+        {
+          "question": "¿Es seguro Laburen.com?",
+          "answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat. Neque porro quisquam est, qui dolorem ipsum quia dolor."
+        },
+        {
+          "question": "¿Cómo empiezo con Laburen.com?",
+          "answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet."
+        }
+      ]
+    }
+  },
+  "usage": {
+    "title": "Cómo usan Laburen las empresas",
+    "subtitle": "Desde startups hasta grandes corporaciones, Laburen se adapta a cualquier industria: ecommerce, salud, logística, bienes raíces y más.",
+    "companies": {
+      "tao": {
+        "title": "Educación Sin Demoras",
+        "description": "Con IA, TAO maneja miles de consultas estudiantiles en tiempo real, reduciendo 70% de tareas manuales. Más enfoque en enseñar, menos en trabajo repetitivo."
+      },
+      "cargo": {
+        "title": "Logística Sin Complicaciones",
+        "description": "Seguimiento automatizado y cotizaciones ahorran horas de trabajo cada semana. Respuestas instantáneas para clientes y un equipo más rápido y eficiente."
+      },
+      "vias3d": {
+        "title": "Leads Que Llegan Solos",
+        "description": "La IA triplicó sus leads calificados sin hacer crecer el equipo. La prospección ahora es automática, y las ventas avanzan más rápido que nunca."
+      },
+      "europie": {
+        "title": "Salud Con Más Tiempo Humano",
+        "description": "Programación automatizada y menos trabajo administrativo. Con IA, el equipo dedica más tiempo donde importa: cuidar a los pacientes."
+      }
+    }
+  },
+  "heroCta": {
+    "badge": "🚀 Crecimiento ilimitado",
+    "title": "¿Está tu negocio listo para el siguiente nivel",
+    "highlight": "siguiente nivel",
+    "description": "La IA puede ser la ventaja competitiva que tu organización necesita. Con Laburen Enterprise, diseñamos Agentes IA adaptados a tus objetivos, equipos y procesos — brindando más eficiencia, más impacto y más tiempo para lo que realmente importa.",
+    "buttons": {
+      "talkToExpert": "Hablar con un Experto",
+      "exploreEnterprise": "Explorar Enterprise"
+    }
+  },
+  "footer": {
+    "sections": {
+      "website": "Sitio Web",
+      "resources": "Recursos",
+      "industries": "Industrias"
+    },
+    "navigation": {
+      "website": ["Inicio", "Planes", "Contacto", "Blog", "Clientes", "Socios"],
+      "resources": [
+        "Empleados IA",
+        "Ventas",
+        "Soporte al Cliente",
+        "Administración",
+        "Gestión Mayorista",
+        "Integraciones"
+      ],
+      "industries": [
+        "Ecommerce",
+        "Salud",
+        "Manufactura",
+        "Bienes Raíces",
+        "Logística",
+        "Software"
+      ]
+    },
+    "social": ["Facebook", "Instagram", "X", "GitHub", "YouTube"]
+  },
+  "enterprise": {
+    "hero": {
+      "title": {
+        "line1": "Escala tu negocio con",
+        "line2": "Empleados IA"
+      },
+      "description": "Integra asistentes inteligentes que trabajan 24/7 en solo\nminutos, sin conocimiento técnico requerido.\nAhorra tiempo, reduce costos y potencia la\nproductividad de tu equipo.",
+      "buttons": {
+        "viewPlans": "Ver Planes",
+        "getInTouch": "Ponerte en contacto"
+      }
+    },
+    "stats": {
+      "title1": "Más de 10.000 empresas en Latinoamérica ya",
+      "title2": "usan Laburen.com para crecer con Inteligencia Artificial",
+      "items": [
+        {
+          "value": "85%",
+          "prefix": "+",
+          "description": "de tareas repetitivas eliminadas con IA."
+        },
+        {
+          "value": "3x",
+          "prefix": "",
+          "description": "procesos de ventas y soporte más rápidos."
+        },
+        {
+          "value": "70%",
+          "prefix": "+",
+          "description": "de nuestros usuarios no tenían experiencia previa con IA."
+        }
+      ]
+    },
+    "globalAlliances": {
+      "title": {
+        "line1": "Potenciando negocios",
+        "line2": "a través de Alianzas Globales"
+      },
+      "nvidia": {
+        "title": "Innovación validada por NVIDIA:",
+        "highlight": "una marca global de confianza.",
+        "paragraphs": [
+          "Ser parte de NVIDIA Inception es un reconocimiento global que valida a Laburen.com como una de las startups con mayor proyección en Inteligencia Artificial.",
+          "No se trata solo de pertenecer a un programa: significa ser evaluado y respaldado por el equipo técnico de NVIDIA, quienes identificaron en nosotros innovación real, escalabilidad y un enfoque práctico para resolver desafíos empresariales. Lo que nos distingue — y captó la atención de NVIDIA — es nuestra capacidad de reentrenar Modelos de Lenguaje Grande (LLMs) para industrias específicas.",
+          "No trabajamos con IA genérica: la adaptamos al lenguaje de cada negocio, con el poder tecnológico que impulsa a los líderes globales de hoy. Con NVIDIA como nuestro aliado, nuestros agentes IA no solo escalan — se convierten en motores de transformación para empresas en todo el mundo."
+        ],
+        "button": "Descubrir más"
+      },
+      "microsoft": {
+        "intro": "Laburen Enterprise: escalando IA hacia nuevos mercados.",
+        "paragraphs": [
+          "Unirse a la red Microsoft for Startups abrió la puerta a un ecosistema global de innovación. Esto no es solo una alianza; es la oportunidad de construir con mayor alcance, velocidad y seguridad — respaldados por la infraestructura y herramientas de una de las compañías tecnológicas más influyentes del mundo.",
+          "Con Laburen Enterprise como socio clave, entregamos soluciones de IA escalables que impulsan la transformación en industrias y regiones, convirtiendo promesas en ventaja competitiva."
+        ],
+        "button": "Descubrir más"
+      }
+    },
+    "faq": {
+      "title": "Potencia tu negocio con Laburen Enterprise",
+      "questions": [
+        {
+          "question": "Juntos crecemos, y aquí están algunos resultados clave:",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        {
+          "question": "¿Pueden los Empleados IA acceder a los datos de mi empresa?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        {
+          "question": "¿Puede mi equipo no técnico usar la plataforma?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        {
+          "question": "¿Puedo definir su comportamiento?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        {
+          "question": "¿Pueden los Empleados IA tomar acciones?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        {
+          "question": "¿Puedo obtener estadísticas y análisis?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        {
+          "question": "¿Dónde trabajan realmente los Empleados IA?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        }
+      ],
+      "button": "Agenda una Consulta Gratuita"
+    },
+    "cta": {
+      "badge": "🚀 Crecer sin límites",
+      "title": {
+        "line1": "Transforma tu negocio",
+        "line2": "con Laburen.com"
+      },
+      "description": "Descubre cómo la IA puede potenciar tu crecimiento, simplificar procesos y abrir nuevas oportunidades de éxito.",
+      "buttons": {
+        "talkToExpert": "Hablar con un Experto",
+        "startForFree": "Comenzar Gratis"
+      }
+    }
+  }
+}
