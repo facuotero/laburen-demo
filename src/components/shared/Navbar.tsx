@@ -102,7 +102,7 @@ export function Navbar() {
 
         {/* Actions */}
         <div className="hidden lg:flex lg:flex-1 lg:justify-end gap-4">
-          <button onClick={() => window.location.href = '/resources'} className="rounded-full bg-neutral-50 text-neutral-900 px-5 py-2 font-medium text-sm hover:bg-neutral-100">
+          <button onClick={() => window.location.href = '/resources'} className="rounded-full bg-neutral-50 hover:bg-neutral-300 text-neutral-900 px-5 py-2 font-medium text-sm">
             {t('talkToSales')}
           </button>
           <button className="rounded-full bg-neutral-800 text-neutral-50 border border-neutral-700 px-5 py-2 font-medium text-sm hover:bg-primary-700">
@@ -147,7 +147,7 @@ export function Navbar() {
             ))}
           </div>
           <div className="mt-6 flex flex-col gap-4">
-            <button onClick={() => window.location.href = '/resources'} className="rounded-full bg-white text-gray-900 px-5 py-2 font-medium text-sm">
+            <button onClick={() => window.location.href = '/resources'} className="rounded-full bg-white hover:bg-neutral-100 text-neutral-900 px-5 py-2 font-medium text-sm">
               {t('talkToSales')}
             </button>
             <button onClick={() => window.location.href = '/resources'} className="rounded-full bg-primary-600 text-white px-5 py-2 font-medium text-sm">
