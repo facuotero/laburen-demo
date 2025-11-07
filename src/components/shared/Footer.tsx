@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
+import Link from 'next/link';
 
 const navigation = {
   solutions: [
@@ -181,12 +182,12 @@ export default function Footer() {
             ))}
           </div>
           <div className="flex gap-x-6 flex-wrap justify-center lg:justify-start">
-            <a className="text-sm/6 text-neutral-600 hover:text-neutral-400 cursor-pointer">
+            <Link className="text-sm/6 text-neutral-600 hover:text-neutral-400 cursor-pointer" href={"/"}>
               {t('privacyPolicy')}
-            </a>
-            <a className="text-sm/6 text-neutral-600 hover:text-neutral-400 cursor-pointer">
+            </Link>
+            <Link className="text-sm/6 text-neutral-600 hover:text-neutral-400 cursor-pointer" href={'/'}>
               {t('termsConditions')}
-            </a>
+            </Link>
             <p className="text-sm/6 text-neutral-600">
               {t('copyright')}
             </p>
