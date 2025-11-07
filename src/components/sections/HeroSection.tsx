@@ -17,7 +17,7 @@ export function HeroSection() {
   return (
     <section className="relative isolate overflow-hidden bg-linear-to-b from-neutral-950 via-neutral-900 to-neutral-950 text-neutral-50 pt-32 pb-10">
       {/* Background glow */}
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,rgba(76,199,34,0.15),transparent_70%)]" />
+      <div className="absolute inset-0 -z-10 bg-[url('/hero-bg.svg')] bg-center bg-no-repeat bg-cover xl:bg-cover" />
 
       {/* Content */}
       <div className="mx-auto max-w-4xl text-center px-6 lg:px-8 lg:mt-20">
