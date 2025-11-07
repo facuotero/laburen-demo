@@ -1,4 +1,9 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 export default function ContentSection() {
+  const t = useTranslations("hero.content");
   return (
     <div className="bg-white py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -6,34 +11,27 @@ export default function ContentSection() {
           <div>
             <div className="lg:max-w-lg">
               <h1 className="text-h3 leading-tight font-normal text-neutral-500">
-                AI is not here to replace us, but to <span className="font-semibold text-neutral-800">amplify us.</span>
+                {t("title.main")} <span className="font-semibold text-neutral-800">{t("title.highlight")}</span>
               </h1>
               <div className="mt-8 space-y-6 text-xl text-neutral-700">
-                <p>
-                  At Laburen, we believe people should focus on what truly matters.
-                </p>
-                <p>
-                  Artificial Intelligence is here to free your time, boost your ideas, and open new opportunities for your business to grow and evolve.
-                </p>
-                <p>
-                  Our mission is simple: make AI agents accessible to everyone.
-                </p>
-                <p>
-                  It shouldn't be a privilege for a few tech giants, but a real tool for entrepreneurs, businesses, and companies that want to transform the way they work.
-                </p>
-                <p>
-                  We believe in a more human and innovative world, where technology has one clear purpose: <span className="font-semibold text-neutral-800">to improve people's lives.</span>
-                </p>
-                <p>
-                  That's the commitment that drives us. That's the heart of Laburen.
-                </p>
+                {t.raw("paragraphs").map((paragraph: string | { text: string; highlight: string }, index: number) => (
+                  <p key={index} className={index === t.raw("paragraphs").length - 1 ? "font-medium" : ""}>
+                    {typeof paragraph === "string" ? (
+                      paragraph
+                    ) : (
+                      <>
+                        {paragraph.text} <span className="font-semibold text-neutral-800">{paragraph.highlight}</span>
+                      </>
+                    )}
+                  </p>
+                ))}
                 <p className="font-medium">
-                  Every revolution starts with a Shovel, like ours.
+                  {t("footer")}
                 </p>
               </div>
               <div className="mt-10">
                 <button className="inline-flex items-center gap-2 rounded-full bg-neutral-900 px-6 py-3 text-sm font-medium text-white hover:bg-neutral-800 transition-colors">
-                  See our vision
+                  {t("button")}
                   <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                   </svg>

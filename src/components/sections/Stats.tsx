@@ -1,22 +1,42 @@
-const stats = [
-  { id: 1, name: 'of repetitive tasks eliminated with AI.', value: '85%', prefix: '+', color: 'text-neutral-900' },
-  { id: 2, name: 'faster sales and support processes.', value: '3x', prefix: '', color: 'text-neutral-900' },
-  { id: 3, name: 'of our users had no prior experience with AI.', value: '70%', prefix: '+', color: 'text-neutral-900' },
-]
+"use client";
+
+import { useTranslations } from "next-intl";
 
 export default function Stats() {
+  const t = useTranslations("enterprise.stats");
+  
+  interface StatItem {
+    value: string;
+    prefix: string;
+    description: string;
+  }
+  
+  interface ProcessedStat {
+    id: number;
+    name: string;
+    value: string;
+    prefix: string;
+    color: string;
+  }
+  
+  const stats: ProcessedStat[] = t.raw("items").map((item: StatItem, index: number) => ({
+    id: index + 1,
+    name: item.description,
+    value: item.value,
+    prefix: item.prefix,
+    color: 'text-neutral-900'
+  }));
   return (
     <div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:max-w-none">
           <div className="text-center">
             <h2 className="text-2xl lg:text-3xl tracking-tight text-neutral-900">
-             More than 10.000 companies in Latin America already
-             <br />use Laburen.com to grow with Artificial Intelligence
+              {t("title1")} <br /> {t("title2")}
             </h2>
           </div>
           <dl className="mt-16 grid grid-cols-1 gap-6 text-center md:grid-cols-3 lg:grid-cols-3">
-            {stats.map((stat) => (
+            {stats.map((stat: ProcessedStat) => (
               <div key={stat.id} className="flex flex-col bg-white border border-green-200 rounded-2xl p-8 shadow-sm">
                 <dd className={`order-first text-5xl font-bold tracking-tight ${stat.color}`}>
                   <span className="text-primary-600">{stat.prefix}</span> {stat.value}

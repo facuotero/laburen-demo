@@ -1,45 +1,43 @@
-const useCases = [
+import {useTranslations} from "use-intl";
+
+
+export default function UsageSection() {
+  const t = useTranslations("usage");
+  const useCases = [
   {
     id: 1,
-    title: "Education Without Delays",
-    description:
-      "With AI, TAO handles thousands of student queries in real time, cutting 70% of manual tasks. More focus on teaching, less on repetitive work.",
+    title: t("companies.tao.title"),
+    description: t("companies.tao.description"),
     imageUrl: "/tao.png",
   },
   {
     id: 2,
-    title: "Seamless Logistics",
-    description:
-      "Automated tracking and quotes save hours of work each week. Instant answers for clients and a faster, more efficient team.",
+    title: t("companies.cargo.title"),
+    description: t("companies.cargo.description"),
     imageUrl: "/cargo.png",
   },
   {
     id: 3,
-    title: "Leads That Come on Their Own",
-    description:
-      "AI tripled their qualified leads without growing the team. Prospecting is now automatic, and sales move faster than ever.",
+    title: t("companies.vias3d.title"),
+    description: t("companies.vias3d.description"),
     imageUrl: "/vias3d.png",
   },
   {
     id: 4,
-    title: "Healthcare With More Human Time",
-    description:
-      "Automated scheduling and less admin work. With AI, the team spends more time where it matters: caring for patients.",
+    title: t("companies.europie.title"),
+    description: t("companies.europie.description"),
     imageUrl: "/europie.png",
   },
 ];
-
-export default function UsageSection() {
   return (
     <div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-balance text-4xl font-semibold tracking-tight text-neutral-900 sm:text-5xl">
-            How companies use Laburen
+            {t("title")}
           </h2>
           <p className="mt-10 text-base text-neutral-600">
-            From startups to large corporations, Laburen adapts to any industry:
-            ecommerce, healthcare, logistics, real estate, and more.
+            {t("subtitle")}
           </p>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-4 lg:mx-0 lg:max-w-none lg:grid-cols-2">
@@ -50,7 +48,7 @@ export default function UsageSection() {
             >
               {/* Contenedor con padding interno */}
               <div className="p-4">
-                <div className="relative w-full h-[240px] rounded-lg overflow-hidden">
+                <div className="relative w-full h-60 rounded-lg overflow-hidden">
                   <img
                     alt={useCase.title}
                     src={useCase.imageUrl}

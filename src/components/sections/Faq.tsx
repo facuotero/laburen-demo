@@ -5,10 +5,12 @@ import {
 } from "@headlessui/react";
 import { PlusIcon, MinusIcon } from "../../../public/icons";
 // import {PlusIcon , MinusIcon} from "@/components/ui/icons";
+import { useTranslations } from "next-intl";
 
 import { Button } from "../ui/button";
 
 export default function Faq({faqs, title, subtitle} : {faqs: {question: string; answer: string}[], title: string, subtitle: string}) {
+  const t = useTranslations();
   return (
     <div>
       <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-40">
@@ -21,7 +23,7 @@ export default function Faq({faqs, title, subtitle} : {faqs: {question: string; 
              {subtitle}
             </p>
            <Button className="p-5 bg-primary-100 mt-6 hover:bg-primary-200 text-primary-800 rounded-3xl border border-primary-500">
-            Schedule a Free Consultation
+            {t("enterprise.faq.button")}
            </Button>
           </div>
           <div className="mt-10 lg:col-span-7 lg:mt-0">

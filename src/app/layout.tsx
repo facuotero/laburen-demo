@@ -4,6 +4,7 @@ import "./globals.css"
 import localFont from "next/font/local"
 import { Navbar } from "@/components/shared/Navbar"
 import Footer from "@/components/shared/Footer"
+import {NextIntlClientProvider} from 'next-intl';
 
 // 🔤 Fuente principal (Inter)
 const inter = Inter({
@@ -34,6 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="white">
+      <NextIntlClientProvider>
       <body
         className={`${inter.variable} ${sourceSerif.variable} font-sans antialiased text-white bg-neutral-50`}
       >
@@ -43,6 +45,7 @@ export default function RootLayout({
         </main>
         <Footer />
       </body>
+      </NextIntlClientProvider>
     </html>
   )
 }
