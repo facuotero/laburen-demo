@@ -37,7 +37,7 @@ export default function HeroCta() {
               {t("description")}
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-4">
-              <button className="rounded-full bg-white border border-gray-300 px-4 py-3 text-sm md:text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 transition-colors whitespace-nowrap">
+                <button onClick={() => window.location.href = '/resources'} className="rounded-full bg-white border border-gray-300 px-4 py-3 text-sm md:text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 transition-colors whitespace-nowrap">
                 {t("buttons.talkToExpert")}
               </button>
               <button className="inline-flex items-center gap-2 rounded-full border border-primary-500 bg-linear-to-b from-primary-500 to-[#006B3C] px-4 py-3 text-sm md:text-sm font-medium text-white shadow-sm hover:opacity-90 transition-opacity whitespace-nowrap">
