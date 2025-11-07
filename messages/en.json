@@ -204,7 +204,45 @@
     "moreInfo": "More information →",
     "title": "Plans and Pricing",
     "subtitle": "Growth with AI",
-    "description": "Get started immediately for free. Upgrade for more credits, usage and collaboration."
+    "description": "Get started immediately for free. Upgrade for more credits, usage and collaboration.",
+    "faq": {
+      "title": "Frequently asked questions",
+      "subtitle": "Find answers to the most common questions about Laburen, our technology, and how it can help you transform the way you work.",
+      "questions": [
+        {
+          "question": "What is Laburen.com?",
+          "answer": "Laburen.com creates AI Employees — intelligent assistants that automate sales, customer support, logistics, and business operations. Unlike traditional chatbots, our AI Employees learn, adapt, and improve over time."
+        },
+        {
+          "question": "What's the difference between an AI Employee and a regular chatbot?",
+          "answer": "AI Employees are advanced virtual workers that learn from your data, understand context, and improve over time. Unlike basic chatbots that follow scripts, they can handle complex conversations, make decisions, and integrate with your business systems."
+        },
+        {
+          "question": "What tasks can AI Employees handle?",
+          "answer": "AI Employees can manage customer support, process sales inquiries, schedule appointments, handle logistics coordination, provide product recommendations, and automate repetitive business processes across multiple channels."
+        },
+        {
+          "question": "Is Laburen.com secure?",
+          "answer": "Yes, we prioritize security with enterprise-grade encryption, secure data handling, and compliance with industry standards. Your data is protected and never shared with third parties."
+        },
+        {
+          "question": "Does it integrate with other platforms?",
+          "answer": "Absolutely! Laburen integrates with popular platforms like WhatsApp, Instagram, CRM systems, calendars, email, and many business tools to create seamless workflows across your existing tech stack."
+        },
+        {
+          "question": "Do AI Employees improve over time?",
+          "answer": "Yes, our AI Employees continuously learn from interactions, feedback, and new data to provide better responses and more accurate assistance. They become more effective as they gain experience with your business."
+        },
+        {
+          "question": "Can they handle multiple conversations at once?",
+          "answer": "Yes, AI Employees can manage unlimited simultaneous conversations across different channels, ensuring no customer inquiry goes unanswered while maintaining personalized interactions."
+        },
+        {
+          "question": "How do I get started with Laburen.com?",
+          "answer": "Getting started is simple! Sign up for a free account, choose your plan, create your first AI Employee using our intuitive interface, and start automating your business processes immediately."
+        }
+      ]
+    }
   },
   "testimonials": {
     "badge": "TESTIMONIALS",
@@ -341,7 +379,12 @@
         "Software"
       ]
     },
-    "social": ["Facebook", "Instagram", "X", "GitHub", "YouTube"]
+    "social": ["Facebook", "Instagram", "X", "GitHub", "YouTube"],
+    "followUs": "Follow Us",
+    "privacyPolicy": "Privacy Policy",
+    "termsConditions": "Terms & Conditions",
+    "copyright": "© Copyright © 2025 Laburen.com",
+    "description": "Transform your business with AI that works 24/7. Smart automation, real results."
   },
   "enterprise": {
     "hero": {
@@ -445,6 +488,59 @@
         "talkToExpert": "Talk to an Expert",
         "startForFree": "Start for Free"
       }
+    }
+  },
+  "contact": {
+    "title": {
+      "line1": "Scale the",
+      "line2": "unscalable with AI"
+    },
+    "description": "Know you want to scale your growing business with AI but need an expert partner? Our team is here to make AI work for your business.",
+    "callInfo": {
+      "title": "In a 30-minute call you will learn how to:",
+      "points": [
+        "Turn roadblocks into automated AI agents",
+        "Build an AI roadmap for your business",
+        "Accelerate AI adoption and results"
+      ]
+    },
+    "form": {
+      "title": "Contact our team",
+      "fields": {
+        "name": "Name",
+        "phone": "Phone",
+        "email": "Business email",
+        "company": "Company name",
+        "employees": {
+          "label": "Number of employees",
+          "placeholder": "Select...",
+          "options": {
+            "1-10": "1-10",
+            "11-50": "11-50",
+            "51-200": "51-200",
+            "201-1000": "201-1000",
+            "1000+": "1000+"
+          }
+        },
+        "budget": {
+          "question": "Our enterprise plans start at $1,500/mo. Does that align with your budget?",
+          "yes": "Yes",
+          "no": "No"
+        },
+        "usecase": {
+          "label": "Use case",
+          "placeholder": "Select...",
+          "options": {
+            "customer-support": "Customer Support",
+            "sales": "Sales",
+            "marketing": "Marketing",
+            "operations": "Operations",
+            "other": "Other"
+          }
+        },
+        "agent": "Describe the AI Agent you´re interested in"
+      },
+      "submit": "Submit"
     }
   }
 }

@@ -204,7 +204,45 @@
     "moreInfo": "Más información →",
     "title": "Planes y Precios",
     "subtitle": "Crecimiento con IA",
-    "description": "Comienza inmediatamente gratis. Actualiza para más créditos, uso y colaboración."
+    "description": "Comienza inmediatamente gratis. Actualiza para más créditos, uso y colaboración.",
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "subtitle": "Encuentra respuestas a las preguntas más comunes sobre Laburen, nuestra tecnología, y cómo puede ayudarte a transformar la forma en que trabajas.",
+      "questions": [
+        {
+          "question": "¿Qué es Laburen.com?",
+          "answer": "Laburen.com crea Empleados IA — asistentes inteligentes que automatizan ventas, soporte al cliente, logística y operaciones comerciales. A diferencia de los chatbots tradicionales, nuestros Empleados IA aprenden, se adaptan y mejoran con el tiempo."
+        },
+        {
+          "question": "¿Cuál es la diferencia entre un Empleado IA y un chatbot regular?",
+          "answer": "Los Empleados IA son trabajadores virtuales avanzados que aprenden de tus datos, entienden contexto y mejoran con el tiempo. A diferencia de chatbots básicos que siguen scripts, pueden manejar conversaciones complejas, tomar decisiones e integrarse con tus sistemas empresariales."
+        },
+        {
+          "question": "¿Qué tareas pueden manejar los Empleados IA?",
+          "answer": "Los Empleados IA pueden gestionar soporte al cliente, procesar consultas de ventas, programar citas, manejar coordinación logística, proporcionar recomendaciones de productos y automatizar procesos empresariales repetitivos en múltiples canales."
+        },
+        {
+          "question": "¿Es seguro Laburen.com?",
+          "answer": "Sí, priorizamos la seguridad con cifrado de nivel empresarial, manejo seguro de datos y cumplimiento de estándares de la industria. Tus datos están protegidos y nunca se comparten con terceros."
+        },
+        {
+          "question": "¿Se integra con otras plataformas?",
+          "answer": "¡Absolutamente! Laburen se integra con plataformas populares como WhatsApp, Instagram, sistemas CRM, calendarios, email y muchas herramientas empresariales para crear flujos de trabajo sin interrupciones en tu stack tecnológico existente."
+        },
+        {
+          "question": "¿Los Empleados IA mejoran con el tiempo?",
+          "answer": "Sí, nuestros Empleados IA aprenden continuamente de interacciones, retroalimentación y nuevos datos para proporcionar mejores respuestas y asistencia más precisa. Se vuelven más efectivos conforme ganan experiencia con tu negocio."
+        },
+        {
+          "question": "¿Pueden manejar múltiples conversaciones a la vez?",
+          "answer": "Sí, los Empleados IA pueden gestionar conversaciones simultáneas ilimitadas en diferentes canales, asegurando que ninguna consulta del cliente quede sin respuesta mientras mantienen interacciones personalizadas."
+        },
+        {
+          "question": "¿Cómo empiezo con Laburen.com?",
+          "answer": "¡Empezar es simple! Regístrate para una cuenta gratuita, elige tu plan, crea tu primer Empleado IA usando nuestra interfaz intuitiva, y comienza a automatizar tus procesos empresariales inmediatamente."
+        }
+      ]
+    }
   },
   "testimonials": {
     "badge": "TESTIMONIOS",
@@ -341,7 +379,12 @@
         "Software"
       ]
     },
-    "social": ["Facebook", "Instagram", "X", "GitHub", "YouTube"]
+    "social": ["Facebook", "Instagram", "X", "GitHub", "YouTube"],
+    "followUs": "Síguenos",
+    "privacyPolicy": "Política de Privacidad",
+    "termsConditions": "Términos y Condiciones",
+    "copyright": "© Copyright © 2025 Laburen.com",
+    "description": "Transforma tu negocio con IA que trabaja 24/7. Automatización inteligente, resultados reales."
   },
   "enterprise": {
     "hero": {
@@ -445,6 +488,59 @@
         "talkToExpert": "Hablar con un Experto",
         "startForFree": "Comenzar Gratis"
       }
+    }
+  },
+  "contact": {
+    "title": {
+      "line1": "Escala lo",
+      "line2": "inescalable con IA"
+    },
+    "description": "¿Sabes que quieres escalar tu negocio en crecimiento con IA pero necesitas un socio experto? Nuestro equipo está aquí para hacer que la IA funcione para tu negocio.",
+    "callInfo": {
+      "title": "En una llamada de 30 minutos aprenderás cómo:",
+      "points": [
+        "Convertir obstáculos en agentes IA automatizados",
+        "Construir una hoja de ruta de IA para tu negocio",
+        "Acelerar la adopción y resultados de IA"
+      ]
+    },
+    "form": {
+      "title": "Contacta a nuestro equipo",
+      "fields": {
+        "name": "Nombre",
+        "phone": "Teléfono",
+        "email": "Email empresarial",
+        "company": "Nombre de la empresa",
+        "employees": {
+          "label": "Número de empleados",
+          "placeholder": "Seleccionar...",
+          "options": {
+            "1-10": "1-10",
+            "11-50": "11-50",
+            "51-200": "51-200",
+            "201-1000": "201-1000",
+            "1000+": "1000+"
+          }
+        },
+        "budget": {
+          "question": "Nuestros planes empresariales comienzan en $1,500/mes. ¿Se alinea con tu presupuesto?",
+          "yes": "Sí",
+          "no": "No"
+        },
+        "usecase": {
+          "label": "Caso de uso",
+          "placeholder": "Seleccionar...",
+          "options": {
+            "customer-support": "Soporte al Cliente",
+            "sales": "Ventas",
+            "marketing": "Marketing",
+            "operations": "Operaciones",
+            "other": "Otro"
+          }
+        },
+        "agent": "Describe el Agente IA en el que estás interesado"
+      },
+      "submit": "Enviar"
     }
   }
 }

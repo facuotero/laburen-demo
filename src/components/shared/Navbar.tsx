@@ -6,15 +6,17 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
 
-const navigation = [
-  { name: "Partners", href: "#partners" },
-  { name: "Enterprise", href: "enterprise" },
-  { name: "Plans", href: "plans" },
-  { name: "Resources", href: "resources" },
-];
 
 export function Navbar() {
+  const t = useTranslations("navbar");
+  const navigation = [
+    { name: t('partners'), href: "#partners" },
+    { name: t('enterprise'), href: "enterprise" },
+    { name: t('plans'), href: "plans" },
+    { name: t('resources'), href: "resources" },
+  ];
   const pathname = usePathname();
   const isHome = ["/"].includes(pathname); // ejemplo
   const borderColor = isHome
@@ -68,10 +70,10 @@ export function Navbar() {
           {/* Tablet buttons - only visible on tablet (md) */}
           <div className="hidden md:flex md:gap-3">
             <button className="rounded-full bg-white border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 transition-colors">
-              Talk to sales
+              {t('talkToSales')}
             </button>
             <button className="inline-flex items-center gap-2 rounded-full bg-neutral-900 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-green-600 transition-colors">
-              Start Creating
+              {t('startCreating')}
             </button>
           </div>
           
@@ -101,10 +103,10 @@ export function Navbar() {
         {/* Actions */}
         <div className="hidden lg:flex lg:flex-1 lg:justify-end gap-4">
           <button className="rounded-full bg-neutral-50 text-neutral-900 px-5 py-2 font-medium text-sm hover:bg-neutral-100">
-            Talk to sales
+            {t('talkToSales')}
           </button>
           <button className="rounded-full bg-neutral-800 text-neutral-50 border border-neutral-700 px-5 py-2 font-medium text-sm hover:bg-primary-700">
-            Start Creating
+            {t('startCreating')}
           </button>
         </div>
       </nav>
@@ -146,10 +148,10 @@ export function Navbar() {
           </div>
           <div className="mt-6 flex flex-col gap-4">
             <button className="rounded-full bg-white text-gray-900 px-5 py-2 font-medium text-sm">
-              Talk to sales
+              {t('talkToSales')}
             </button>
             <button className="rounded-full bg-primary-600 text-white px-5 py-2 font-medium text-sm">
-              Start Creating
+              {t('startCreating')}
             </button>
           </div>
         </DialogPanel>
