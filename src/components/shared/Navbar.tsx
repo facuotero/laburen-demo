@@ -69,10 +69,10 @@ export function Navbar() {
         <div className="flex lg:hidden items-center gap-3">
           {/* Tablet buttons - only visible on tablet (md) */}
           <div className="hidden md:flex md:gap-3">
-            <button className="rounded-full bg-white border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 transition-colors">
+            <button onClick={() => window.location.href = '/resources'} className="rounded-full bg-white border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 transition-colors">
               {t('talkToSales')}
             </button>
-            <button className="inline-flex items-center gap-2 rounded-full bg-neutral-900 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-green-600 transition-colors">
+            <button onClick={() => window.location.href = '/resources'} className="inline-flex items-center gap-2 rounded-full bg-neutral-900 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-green-600 transition-colors">
               {t('startCreating')}
             </button>
           </div>
@@ -102,7 +102,7 @@ export function Navbar() {
 
         {/* Actions */}
         <div className="hidden lg:flex lg:flex-1 lg:justify-end gap-4">
-          <button className="rounded-full bg-neutral-50 text-neutral-900 px-5 py-2 font-medium text-sm hover:bg-neutral-100">
+          <button onClick={() => window.location.href = '/resources'} className="rounded-full bg-neutral-50 text-neutral-900 px-5 py-2 font-medium text-sm hover:bg-neutral-100">
             {t('talkToSales')}
           </button>
           <button className="rounded-full bg-neutral-800 text-neutral-50 border border-neutral-700 px-5 py-2 font-medium text-sm hover:bg-primary-700">
@@ -147,10 +147,10 @@ export function Navbar() {
             ))}
           </div>
           <div className="mt-6 flex flex-col gap-4">
-            <button className="rounded-full bg-white text-gray-900 px-5 py-2 font-medium text-sm">
+            <button onClick={() => window.location.href = '/resources'} className="rounded-full bg-white text-gray-900 px-5 py-2 font-medium text-sm">
               {t('talkToSales')}
             </button>
-            <button className="rounded-full bg-primary-600 text-white px-5 py-2 font-medium text-sm">
+            <button onClick={() => window.location.href = '/resources'} className="rounded-full bg-primary-600 text-white px-5 py-2 font-medium text-sm">
               {t('startCreating')}
             </button>
           </div>
